@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class ST03_013_76 extends Card {
+    public static id: string = "ST03_013_76";
+    
+    public static _name: string = "Boa Hancock";
+
+    public effect: string = "<Blocker> (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\r\n\r\n[Trigger] Play this card.";
+    
+    public source: string = "The Seven Warlords of the Sea [ST-03]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/ST03-013_2e4c7b_jp.jpg";
+    
+    public static type = "char";
+    
+    public getId() {
+        return ST03_013_76.id
+    }
+    
+    public getType() {
+        return ST03_013_76.type
+    }
+    
+    public getImage() {
+        return ST03_013_76.image
+    }
+    
+    public getName() {
+        return ST03_013_76._name
+    }
+}

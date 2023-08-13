@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class ST06_012_284 extends Card {
+    public static id: string = "ST06_012_284";
+    
+    public static _name: string = "Monkey D. Garp";
+
+    public effect: string = "[Activate: Main] Trash 1 card and rest this card: K.O. up to 1 of your opponent's cost 4 or lower Characters.";
+    
+    public source: string = "Navy [ST-06]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/ST06-012_304edb_jp.jpg";
+    
+    public static type = "char";
+    
+    public getId() {
+        return ST06_012_284.id
+    }
+    
+    public getType() {
+        return ST06_012_284.type
+    }
+    
+    public getImage() {
+        return ST06_012_284.image
+    }
+    
+    public getName() {
+        return ST06_012_284._name
+    }
+}

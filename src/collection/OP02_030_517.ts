@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class OP02_030_517 extends Card {
+    public static id: string = "OP02_030_517";
+    
+    public static _name: string = "Kozuki Oden";
+
+    public effect: string = "[Activate: Main] (Once per turn) (3): Switch this Character to active.\r\n[On K.O.] Play up to 1 {Wano Country} type Character card with a cost of 3 from your deck. Then, shuffle your deck.";
+    
+    public source: string = "Paramount War [OP-02]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/OP02-030_582c61_jp.jpg";
+    
+    public static type = "char";
+    
+    public getId() {
+        return OP02_030_517.id
+    }
+    
+    public getType() {
+        return OP02_030_517.type
+    }
+    
+    public getImage() {
+        return OP02_030_517.image
+    }
+    
+    public getName() {
+        return OP02_030_517._name
+    }
+}

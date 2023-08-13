@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class ST09_008_747 extends Card {
+    public static id: string = "ST09_008_747";
+    
+    public static _name: string = "Shimotsuki Ushimaru";
+
+    public effect: string = "[DON!!×1] [When Attacking] You may add the top or bottom card of your Life area to your hand: Play up to 1 yellow Character card with the {Land of Wano} type and a cost of 4 or less from your hand.";
+    
+    public source: string = "Side - Yamato [ST-09]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/ST09-008_1efa72_jp.jpg";
+    
+    public static type = "char";
+    
+    public getId() {
+        return ST09_008_747.id
+    }
+    
+    public getType() {
+        return ST09_008_747.type
+    }
+    
+    public getImage() {
+        return ST09_008_747.image
+    }
+    
+    public getName() {
+        return ST09_008_747._name
+    }
+}

@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class ST08_014_738 extends Card {
+    public static id: string = "ST08_014_738";
+    
+    public static _name: string = "Gum-Gum Bell";
+
+    public effect: string = "[Main] You may add the top card of your life to your hand: Give up to 1 of your opponent's Characters -7 cost during this turn.\r\n\r\n[Trigger] Add up to 1 Black Character card with a cost of 2 or less from your trash to your hand.";
+    
+    public source: string = "Side - Monkey D. Luffy [ST-08]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/ST08-014_337945_jp.jpg";
+    
+    public static type = "event";
+    
+    public getId() {
+        return ST08_014_738.id
+    }
+    
+    public getType() {
+        return ST08_014_738.type
+    }
+    
+    public getImage() {
+        return ST08_014_738.image
+    }
+    
+    public getName() {
+        return ST08_014_738._name
+    }
+}

@@ -1,0 +1,32 @@
+
+import Card from "../entities/Card";
+
+export default class OP01_061_133 extends Card {
+    public static id: string = "OP01_061_133";
+    
+    public static _name: string = "Kaido";
+
+    public effect: string = "[DON!! x1][During your turn][Once per turn] When one of your opponent's Characters is K.O.'d, you can add 1 DON!! card from your DON!! deck and set it as active.";
+    
+    public source: string = "Romance Dawn [OP-01]";
+    
+    public static image = "https://onepiece-cardgame.dev/images/cards/OP01-061_618433_jp.jpg";
+    
+    public static type = "leader";
+    
+    public getId() {
+        return OP01_061_133.id
+    }
+    
+    public getType() {
+        return OP01_061_133.type
+    }
+    
+    public getImage() {
+        return OP01_061_133.image
+    }
+    
+    public getName() {
+        return OP01_061_133._name
+    }
+}
