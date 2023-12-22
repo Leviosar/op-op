@@ -10,9 +10,11 @@ export default class OP01_021_574 extends Card {
     
     public source: string = "Promo [P]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/OP01-021_745e2c_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/OP01-021_745e2c_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "3";
     
     public getId() {
         return OP01_021_574.id
@@ -28,5 +30,9 @@ export default class OP01_021_574 extends Card {
     
     public getName() {
         return OP01_021_574._name
+    }
+    
+    public getCost(): number {
+        return parseInt(OP01_021_574.cost)
     }
 }

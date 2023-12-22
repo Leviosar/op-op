@@ -10,9 +10,11 @@ export default class ST06_009_298 extends Card {
     
     public source: string = "Navy [ST-06]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST06-009_f6a6e4_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST06-009_f6a6e4_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "2";
     
     public getId() {
         return ST06_009_298.id
@@ -28,5 +30,9 @@ export default class ST06_009_298 extends Card {
     
     public getName() {
         return ST06_009_298._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST06_009_298.cost)
     }
 }

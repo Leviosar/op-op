@@ -10,9 +10,11 @@ export default class DON_Luffy_16 extends Card {
     
     public source: string = "Misc [MISC]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/DON-Luffy_7a008d_jp.png";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/DON-Luffy_7a008d_jp.png";
     
-    public static type = "don";
+    public static type: string = "don";
+    
+    public static cost: string = "None";
     
     public getId() {
         return DON_Luffy_16.id
@@ -28,5 +30,9 @@ export default class DON_Luffy_16 extends Card {
     
     public getName() {
         return DON_Luffy_16._name
+    }
+    
+    public getCost(): number {
+        return parseInt(DON_Luffy_16.cost)
     }
 }

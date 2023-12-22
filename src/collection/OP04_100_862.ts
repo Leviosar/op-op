@@ -10,9 +10,11 @@ export default class OP04_100_862 extends Card {
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/OP04-100_03cf4c_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/OP04-100_03cf4c_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "3";
     
     public getId() {
         return OP04_100_862.id
@@ -28,5 +30,9 @@ export default class OP04_100_862 extends Card {
     
     public getName() {
         return OP04_100_862._name
+    }
+    
+    public getCost(): number {
+        return parseInt(OP04_100_862.cost)
     }
 }

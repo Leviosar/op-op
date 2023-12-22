@@ -10,9 +10,11 @@ export default class ST01_001_1 extends Card {
     
     public source: string = "Straw Hat Crew [ST-01]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST01-001_85f00c_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST01-001_85f00c_jp.jpg";
     
-    public static type = "leader";
+    public static type: string = "leader";
+    
+    public static cost: string = "0";
     
     public getId() {
         return ST01_001_1.id
@@ -28,5 +30,9 @@ export default class ST01_001_1 extends Card {
     
     public getName() {
         return ST01_001_1._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST01_001_1.cost)
     }
 }

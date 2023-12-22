@@ -10,9 +10,11 @@ export default class ST07_006_593 extends Card {
     
     public source: string = "Big Mom Pirates [ST-07]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST07-006_017638_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST07-006_017638_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "2";
     
     public getId() {
         return ST07_006_593.id
@@ -28,5 +30,9 @@ export default class ST07_006_593 extends Card {
     
     public getName() {
         return ST07_006_593._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST07_006_593.cost)
     }
 }

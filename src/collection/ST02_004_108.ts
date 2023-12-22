@@ -10,9 +10,11 @@ export default class ST02_004_108 extends Card {
     
     public source: string = "Worst Generation [ST-02]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST02-004_12f439_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST02-004_12f439_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "1";
     
     public getId() {
         return ST02_004_108.id
@@ -28,5 +30,9 @@ export default class ST02_004_108 extends Card {
     
     public getName() {
         return ST02_004_108._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST02_004_108.cost)
     }
 }

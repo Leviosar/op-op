@@ -10,9 +10,11 @@ export default class OP01_031_257 extends Card {
     
     public source: string = "Romance Dawn [OP-01]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/OP01-031_fdeb59_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/OP01-031_fdeb59_jp.jpg";
     
-    public static type = "leader";
+    public static type: string = "leader";
+    
+    public static cost: string = "None";
     
     public getId() {
         return OP01_031_257.id
@@ -28,5 +30,9 @@ export default class OP01_031_257 extends Card {
     
     public getName() {
         return OP01_031_257._name
+    }
+    
+    public getCost(): number {
+        return parseInt(OP01_031_257.cost)
     }
 }

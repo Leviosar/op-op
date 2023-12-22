@@ -10,9 +10,11 @@ export default class ST08_013_739 extends Card {
     
     public source: string = "Side - Monkey D. Luffy [ST-08]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST08-013_735bee_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST08-013_735bee_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "5";
     
     public getId() {
         return ST08_013_739.id
@@ -28,5 +30,9 @@ export default class ST08_013_739 extends Card {
     
     public getName() {
         return ST08_013_739._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST08_013_739.cost)
     }
 }

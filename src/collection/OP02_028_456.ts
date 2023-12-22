@@ -10,9 +10,11 @@ export default class OP02_028_456 extends Card {
     
     public source: string = "Paramount War [OP-02]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/OP02-028_286dc9_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/OP02-028_286dc9_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "3";
     
     public getId() {
         return OP02_028_456.id
@@ -28,5 +30,9 @@ export default class OP02_028_456 extends Card {
     
     public getName() {
         return OP02_028_456._name
+    }
+    
+    public getCost(): number {
+        return parseInt(OP02_028_456.cost)
     }
 }

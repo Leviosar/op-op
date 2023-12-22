@@ -10,9 +10,11 @@ export default class DON_gold_261 extends Card {
     
     public source: string = "Misc [MISC]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/DON-gold_b97ce0_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/DON-gold_b97ce0_jp.jpg";
     
-    public static type = "don";
+    public static type: string = "don";
+    
+    public static cost: string = "None";
     
     public getId() {
         return DON_gold_261.id
@@ -28,5 +30,9 @@ export default class DON_gold_261 extends Card {
     
     public getName() {
         return DON_gold_261._name
+    }
+    
+    public getCost(): number {
+        return parseInt(DON_gold_261.cost)
     }
 }

@@ -10,9 +10,11 @@ export default class ST10_001_887 extends Card {
     
     public source: string = "The Three Captains [ST-10]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST10-001_c904b2_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST10-001_c904b2_jp.jpg";
     
-    public static type = "leader";
+    public static type: string = "leader";
+    
+    public static cost: string = "None";
     
     public getId() {
         return ST10_001_887.id
@@ -28,5 +30,9 @@ export default class ST10_001_887 extends Card {
     
     public getName() {
         return ST10_001_887._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST10_001_887.cost)
     }
 }

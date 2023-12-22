@@ -10,9 +10,11 @@ export default class ST05_005_228 extends Card {
     
     public source: string = "One Piece Film Edition [ST-05]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST05-005_a000ba_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST05-005_a000ba_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "2";
     
     public getId() {
         return ST05_005_228.id
@@ -28,5 +30,9 @@ export default class ST05_005_228 extends Card {
     
     public getName() {
         return ST05_005_228._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST05_005_228.cost)
     }
 }

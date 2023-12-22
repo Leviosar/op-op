@@ -10,9 +10,11 @@ export default class OP03_043_649 extends Card {
     
     public source: string = "Pillars of Strength [OP-03]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/OP03-043_e2ab85_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/OP03-043_e2ab85_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "2";
     
     public getId() {
         return OP03_043_649.id
@@ -28,5 +30,9 @@ export default class OP03_043_649 extends Card {
     
     public getName() {
         return OP03_043_649._name
+    }
+    
+    public getCost(): number {
+        return parseInt(OP03_043_649.cost)
     }
 }

@@ -10,9 +10,11 @@ export default class ST09_004_745 extends Card {
     
     public source: string = "Side - Yamato [ST-09]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST09-004_504767_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST09-004_504767_jp.jpg";
     
-    public static type = "char";
+    public static type: string = "char";
+    
+    public static cost: string = "4";
     
     public getId() {
         return ST09_004_745.id
@@ -28,5 +30,9 @@ export default class ST09_004_745 extends Card {
     
     public getName() {
         return ST09_004_745._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST09_004_745.cost)
     }
 }

@@ -10,9 +10,11 @@ export default class ST04_017_38 extends Card {
     
     public source: string = "Animal Kingdom Pirates [ST-04]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST04-017_80f08b_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST04-017_80f08b_jp.jpg";
     
-    public static type = "stage";
+    public static type: string = "stage";
+    
+    public static cost: string = "3";
     
     public getId() {
         return ST04_017_38.id
@@ -28,5 +30,9 @@ export default class ST04_017_38 extends Card {
     
     public getName() {
         return ST04_017_38._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST04_017_38.cost)
     }
 }

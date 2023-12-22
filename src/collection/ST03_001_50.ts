@@ -10,9 +10,11 @@ export default class ST03_001_50 extends Card {
     
     public source: string = "The Seven Warlords of the Sea [ST-03]";
     
-    public static image = "https://onepiece-cardgame.dev/images/cards/ST03-001_6be431_jp.jpg";
+    public static image: string = "https://onepiece-cardgame.dev/images/cards/ST03-001_6be431_jp.jpg";
     
-    public static type = "leader";
+    public static type: string = "leader";
+    
+    public static cost: string = "None";
     
     public getId() {
         return ST03_001_50.id
@@ -28,5 +30,9 @@ export default class ST03_001_50 extends Card {
     
     public getName() {
         return ST03_001_50._name
+    }
+    
+    public getCost(): number {
+        return parseInt(ST03_001_50.cost)
     }
 }
