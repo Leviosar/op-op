@@ -30,4 +30,10 @@ export default class Player {
             this.hand.push(this.deck.pop());
         }
     }
+
+    public pay(cost: number) {
+        for (let i = 0; i < cost; i++) {
+            this.cost.filter(c => !c.tapped)[0].tap()
+        }
+    }
 }

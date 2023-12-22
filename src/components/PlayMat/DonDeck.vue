@@ -1,10 +1,10 @@
 <template>
-  <flip-card>
+  <flip-card locked :default="true">
     <template v-slot:front>
-      <card-front :card="player.deck.first()" />
+      <card-front :card="player.deck.don[0]" />
     </template>
     <template v-slot:back>
-      <card-back :color="'black'" :border-color="'white'" :icon="icon" />
+      <card-back :color="'black'" :border-color="'white'" :icon="icon" :text="player.deck.don.length.toString()" />
     </template>
   </flip-card>
 </template>

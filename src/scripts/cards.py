@@ -13,9 +13,11 @@ export default class %s extends Card {
     
     public source: string = "%s";
     
-    public static image = "%s";
+    public static image: string = "%s";
     
-    public static type = "%s";
+    public static type: string = "%s";
+    
+    public static cost: string = "%s";
     
     public getId() {
         return %s.id
@@ -31,6 +33,10 @@ export default class %s extends Card {
     
     public getName() {
         return %s._name
+    }
+    
+    public getCost(): number {
+        return parseInt(%s.cost)
     }
 }
 """
@@ -64,8 +70,10 @@ for card in cards:
             name, 
             effect, 
             card["source_name"], 
-            card["iu"], 
+            card["image_url"], 
             type_,
+            card["cost"], 
+            id_,
             id_,
             id_,
             id_,

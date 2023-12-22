@@ -3,7 +3,7 @@
     <flip-card 
       v-for="life in lifes" :key="life"
       style="position: absolute;" 
-      :class="`mt-${(life - 1) * 4}`"
+      :class="`ms-${(life - 1) * 2}`"
       locked
       :default="true"
     >

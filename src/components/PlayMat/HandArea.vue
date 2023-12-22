@@ -1,27 +1,22 @@
 <template>
-  <v-col class="d-flex justify-center align-center" v-for="(card, index) in player.hand" :key="index">
-    <flip-card>
-      <template v-slot:front>
-        <card-front :card="card"></card-front>
-      </template>
-      <template v-slot:back>
-        <card-back></card-back>
-      </template>
-    </flip-card>
-  </v-col>
+  <transition-group name="slide-fade">
+    <v-col class="d-flex justify-center align-center hand-card" v-for="card in player.hand" :key="card.uuid">
+      <game-card :card="card" :player="player"></game-card>
+    </v-col>
+  </transition-group>
 </template>
   
 <script lang="ts">
 import { defineComponent, PropType } from 'vue'
 
 import Player from '../../entities/Player';
-import FlipCard from '../core/FlipCard.vue';
+import GameCard from '../core/GameCard.vue';
 import CardFront from '../core/CardFront.vue';
 import CardBack from '../core/CardBack.vue';
 
 export default defineComponent({
   components: {
-    FlipCard,
+    GameCard,
     CardFront,
     CardBack,
   },
@@ -40,12 +35,30 @@ export default defineComponent({
 </script>
   
 <style scoped>
-.character-card {
-  box-sizing: border-box;
-  aspect-ratio: 149/208;
-  height: 200px;
-  background-color: #292c5c;
-  border: 8px solid #14162f;
-  /* border: 12px solid rgba(136, 126, 9, 1); */
+.hand-card {
+  /* transition: scale 1s; */
+  transition: all 0.3s;
+  scale: 1.0;
+}
+.hand-card:hover {
+  scale: 1.5;
+  translate: 0px -40px;
+}
+/*
+  Enter and leave animations can use different
+  durations and timing functions.
+*/
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-100px);
+  opacity: 0;
 }
 </style>

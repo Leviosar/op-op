@@ -1,7 +1,7 @@
 <template>
-  <flip-card>
+  <flip-card :default="player.trash.length === 0" :locked="player.trash.length === 0">
     <template v-slot:front>
-      <card-front :card="player.deck.first()" />
+      <card-front :card="player.trash[0]" />
     </template>
     <template v-slot:back>
       <card-back :color="color" :border-color="borderColor" :icon="icon" />

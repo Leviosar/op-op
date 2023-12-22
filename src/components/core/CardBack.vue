@@ -1,8 +1,9 @@
 <template>
   <v-card class="card-back">
     <div class="floating-icon">
-      <img :src="icon" width="80" alt="">
+      <img :src="icon" width="30" alt="">
     </div>
+    <small v-if="text !== undefined"> {{ text }} </small>
   </v-card>
 </template>
 
@@ -15,6 +16,10 @@ export default defineComponent({
     icon: {
       type: String,
       default: LogPoseIcon
+    },
+    text: {
+      type: String,
+      required: false,
     },
     color: {
       type: String,
@@ -31,9 +36,9 @@ export default defineComponent({
 <style scoped>
   .card-back {
     aspect-ratio: 149/208;
-    height: 150px;
+    height: 100px;
     background-color: v-bind(color);
-    border: 8px solid v-bind(borderColor);
+    border: 4px solid v-bind(borderColor);
     user-select: none;
   }
 

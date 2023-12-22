@@ -1,16 +1,23 @@
 import Card from "./Card";
 import { collection } from "../collection/index";
+import DON_CARD from "../collection/DON_don_15";
 
 export default class Deck {
-    private maxSize = 50;
+    public cards: Card[];
 
-    private cards: Card[];
+    public don: Card[];
 
     public leader: Card;
 
     constructor() {
         this.cards = [];
+        this.don = [];
+        this.fillDonDeck();
         this.leader = this.getLeader();
+    }
+
+    public fillDonDeck() {
+        this.don = Array.from({ length: 10 }, (_, __) => new DON_CARD());
     }
 
     public first(): Card {
@@ -36,6 +43,7 @@ export default class Deck {
         
         this.cards = list.map((item) => new (cards.filter(card => card.id.includes(item))[0])).sort(() => .5 - Math.random());
         this.leader = this.getLeader();
+        // this.cards = Array.from({ length: 10 }, (_, __) => new DON_CARD());
     }
 
     public randomDeck() {

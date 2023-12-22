@@ -1,26 +1,28 @@
 <template>
   <v-card color="grey-darken-3" style="min-height: 300px" class="pa-4">
-    <v-row>
-      <v-col cols="2" class="d-flex justify-center px-6">
-        <life-area :player="player" />
-      </v-col>
+    <v-row justify="end">
       <v-col cols="10">
-        <v-row>
-          <character-area :player="player" />
-        </v-row>
+        <character-area :player="players[playerId]" />
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12">
         <v-row> 
-          <v-col class="d-flex justify-center align-center"></v-col>
+          <v-col>
+            <life-area :player="players[playerId]" />
+          </v-col>
+          <v-col></v-col>
           <v-col class="d-flex justify-center align-center">
-            <phase-area />
+            <!-- <phase-area :player="players[playerId]"/> -->
+          </v-col>
+          <v-col class="d-flex justify-end align-center">
+            <leader-area :player="players[playerId]"/>
+          </v-col>
+          <v-col class="d-flex justify-end align-center">
+            <stage-area :player="players[playerId]"/>
           </v-col>
           <v-col class="d-flex justify-center align-center">
-            <leader-area :player="player"/>
-          </v-col>
-          <v-col class="d-flex justify-center align-center">
-            <stage-area :player="player"/>
-          </v-col>
-          <v-col class="d-flex justify-center align-center">
-            <main-deck :player="player" />
+            <main-deck :player="players[playerId]" />
           </v-col>
         </v-row>
       </v-col>
@@ -29,29 +31,30 @@
       <v-col>
         <v-row>
           <v-col cols="2" class="d-flex justify-center align-center">
-            <don-deck :player="player" />
+            <don-deck :player="players[playerId]" />
           </v-col>
-          <v-col cols="8" class="d-flex justify-center align-center px-6">
-            <cost-area :player="player" />
+          <v-col cols="8" class="d-flex justify-center align-center">
+            <cost-area :player="players[playerId]" />
           </v-col>
           <v-col cols="2" class="d-flex justify-center align-center">
-            <trash-area :player="player" />
+            <trash-area :player="players[playerId]" />
           </v-col>
         </v-row>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="2"></v-col>
-      <hand-area :player="player" />
+      <hand-area :player="players[playerId]" />
       <v-col cols="2"></v-col>
     </v-row>
   </v-card>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent } from "vue";
+import { game } from "../../store/game";
+import { mapState } from 'pinia'
 
-import Player from "../../entities/Player";
 import CharacterArea from "./CharacterArea.vue";
 import StageArea from "./StageArea.vue";
 import LeaderArea from "./LeaderArea.vue";
@@ -77,10 +80,13 @@ export default defineComponent({
     HandArea,
   },
   props: {
-    player: {
+    playerId: {
       required: true,
-      type: Object as PropType<Player>,
+      type: Number,
     }
+  },
+  computed: {
+    ... mapState(game, ['players'])
   }
 })
 </script>

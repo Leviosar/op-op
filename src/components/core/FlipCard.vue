@@ -41,6 +41,10 @@ export default defineComponent({
 </script>
 
 <style>
+.flip-card {
+  transition: rotate 0.5s ease-in;
+}
+
 .flip-enter-active {
   transition: all 0.8s ease;
 }

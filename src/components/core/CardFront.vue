@@ -14,7 +14,7 @@ export default defineComponent({
     }
   },
   computed: {
-    image(): string {
+    _image(): string {
       if (this.card === undefined) {
         return `url(../../assets/logpose.png)`;
       }
@@ -28,9 +28,9 @@ export default defineComponent({
 <style scoped>
   .card-front {
     aspect-ratio: 149/208;
-    height: 150px;
+    height: 100px;
     background-color: #292c5c;
-    background-image: v-bind(image);
+    background-image: v-bind('_image');
     background-size: contain;
     user-select: none;
   }
