@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class ST10_011_897 extends Card {
     public static id: string = "ST10_011_897";
@@ -12,27 +12,33 @@ export default class ST10_011_897 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/ST10-011_7b5d2b_jp.jpg";
     
-    public static type: string = "char";
+    public static type: CardType = "char";
     
     public static cost: string = "3";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return ST10_011_897.id
+        return ST10_011_897.id;
     }
     
-    public getType() {
-        return ST10_011_897.type
+    public getType() : CardType {
+        return ST10_011_897.type as CardType;
     }
     
     public getImage() {
-        return ST10_011_897.image
+        return ST10_011_897.image;
     }
     
     public getName() {
-        return ST10_011_897._name
+        return ST10_011_897._name;
     }
     
     public getCost(): number {
-        return parseInt(ST10_011_897.cost)
+        return parseInt(ST10_011_897.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return ST10_011_897.keywords;
     }
 }

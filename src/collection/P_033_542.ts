@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class P_033_542 extends Card {
     public static id: string = "P_033_542";
@@ -12,27 +12,33 @@ export default class P_033_542 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/P-033_83c4e7_jp.jpg";
     
-    public static type: string = "char";
+    public static type: CardType = "char";
     
     public static cost: string = "4";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return P_033_542.id
+        return P_033_542.id;
     }
     
-    public getType() {
-        return P_033_542.type
+    public getType() : CardType {
+        return P_033_542.type as CardType;
     }
     
     public getImage() {
-        return P_033_542.image
+        return P_033_542.image;
     }
     
     public getName() {
-        return P_033_542._name
+        return P_033_542._name;
     }
     
     public getCost(): number {
-        return parseInt(P_033_542.cost)
+        return parseInt(P_033_542.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return P_033_542.keywords;
     }
 }

@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class ST01_016_27 extends Card {
     public static id: string = "ST01_016_27";
@@ -12,27 +12,33 @@ export default class ST01_016_27 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/ST01-016_d23d2c_jp.jpg";
     
-    public static type: string = "event";
+    public static type: CardType = "event";
     
     public static cost: string = "1";
     
+    public static keywords: string[] = ["Blocker> when that Leader or Character attacks.\r\n[Trigger] K.O. 1 of your opponent's Characters with a Cost of 3 or less with <Blocker"];
+    
     public getId() {
-        return ST01_016_27.id
+        return ST01_016_27.id;
     }
     
-    public getType() {
-        return ST01_016_27.type
+    public getType() : CardType {
+        return ST01_016_27.type as CardType;
     }
     
     public getImage() {
-        return ST01_016_27.image
+        return ST01_016_27.image;
     }
     
     public getName() {
-        return ST01_016_27._name
+        return ST01_016_27._name;
     }
     
     public getCost(): number {
-        return parseInt(ST01_016_27.cost)
+        return parseInt(ST01_016_27.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return ST01_016_27.keywords;
     }
 }

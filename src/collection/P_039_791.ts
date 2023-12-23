@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class P_039_791 extends Card {
     public static id: string = "P_039_791";
@@ -12,27 +12,33 @@ export default class P_039_791 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/P-039_b108c8_jp.jpg";
     
-    public static type: string = "char";
+    public static type: CardType = "char";
     
     public static cost: string = "5";
     
+    public static keywords: string[] = ["Banish"];
+    
     public getId() {
-        return P_039_791.id
+        return P_039_791.id;
     }
     
-    public getType() {
-        return P_039_791.type
+    public getType() : CardType {
+        return P_039_791.type as CardType;
     }
     
     public getImage() {
-        return P_039_791.image
+        return P_039_791.image;
     }
     
     public getName() {
-        return P_039_791._name
+        return P_039_791._name;
     }
     
     public getCost(): number {
-        return parseInt(P_039_791.cost)
+        return parseInt(P_039_791.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return P_039_791.keywords;
     }
 }

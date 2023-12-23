@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class DON_gold_261 extends Card {
     public static id: string = "DON_gold_261";
@@ -12,27 +12,33 @@ export default class DON_gold_261 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/DON-gold_b97ce0_jp.jpg";
     
-    public static type: string = "don";
+    public static type: CardType = "don";
     
     public static cost: string = "None";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return DON_gold_261.id
+        return DON_gold_261.id;
     }
     
-    public getType() {
-        return DON_gold_261.type
+    public getType() : CardType {
+        return DON_gold_261.type as CardType;
     }
     
     public getImage() {
-        return DON_gold_261.image
+        return DON_gold_261.image;
     }
     
     public getName() {
-        return DON_gold_261._name
+        return DON_gold_261._name;
     }
     
     public getCost(): number {
-        return parseInt(DON_gold_261.cost)
+        return parseInt(DON_gold_261.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return DON_gold_261.keywords;
     }
 }

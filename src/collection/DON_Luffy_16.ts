@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class DON_Luffy_16 extends Card {
     public static id: string = "DON_Luffy_16";
@@ -12,27 +12,33 @@ export default class DON_Luffy_16 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/DON-Luffy_7a008d_jp.png";
     
-    public static type: string = "don";
+    public static type: CardType = "don";
     
     public static cost: string = "None";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return DON_Luffy_16.id
+        return DON_Luffy_16.id;
     }
     
-    public getType() {
-        return DON_Luffy_16.type
+    public getType() : CardType {
+        return DON_Luffy_16.type as CardType;
     }
     
     public getImage() {
-        return DON_Luffy_16.image
+        return DON_Luffy_16.image;
     }
     
     public getName() {
-        return DON_Luffy_16._name
+        return DON_Luffy_16._name;
     }
     
     public getCost(): number {
-        return parseInt(DON_Luffy_16.cost)
+        return parseInt(DON_Luffy_16.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return DON_Luffy_16.keywords;
     }
 }

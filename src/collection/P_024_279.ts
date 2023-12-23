@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class P_024_279 extends Card {
     public static id: string = "P_024_279";
@@ -12,27 +12,33 @@ export default class P_024_279 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/P-024_96fafd_jp.jpg";
     
-    public static type: string = "event";
+    public static type: CardType = "event";
     
     public static cost: string = "2";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return P_024_279.id
+        return P_024_279.id;
     }
     
-    public getType() {
-        return P_024_279.type
+    public getType() : CardType {
+        return P_024_279.type as CardType;
     }
     
     public getImage() {
-        return P_024_279.image
+        return P_024_279.image;
     }
     
     public getName() {
-        return P_024_279._name
+        return P_024_279._name;
     }
     
     public getCost(): number {
-        return parseInt(P_024_279.cost)
+        return parseInt(P_024_279.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return P_024_279.keywords;
     }
 }

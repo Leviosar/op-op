@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class P_003_48 extends Card {
     public static id: string = "P_003_48";
@@ -12,27 +12,33 @@ export default class P_003_48 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/P-003_82d953_jp.jpg";
     
-    public static type: string = "char";
+    public static type: CardType = "char";
     
     public static cost: string = "3";
     
+    public static keywords: string[] = ["Double Attack"];
+    
     public getId() {
-        return P_003_48.id
+        return P_003_48.id;
     }
     
-    public getType() {
-        return P_003_48.type
+    public getType() : CardType {
+        return P_003_48.type as CardType;
     }
     
     public getImage() {
-        return P_003_48.image
+        return P_003_48.image;
     }
     
     public getName() {
-        return P_003_48._name
+        return P_003_48._name;
     }
     
     public getCost(): number {
-        return parseInt(P_003_48.cost)
+        return parseInt(P_003_48.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return P_003_48.keywords;
     }
 }

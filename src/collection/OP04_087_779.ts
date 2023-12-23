@@ -1,5 +1,5 @@
 
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class OP04_087_779 extends Card {
     public static id: string = "OP04_087_779";
@@ -12,27 +12,33 @@ export default class OP04_087_779 extends Card {
     
     public static image: string = "https://onepiece-cardgame.dev/images/cards/OP04-087_f25392_jp.jpg";
     
-    public static type: string = "char";
+    public static type: CardType = "char";
     
     public static cost: string = "5";
     
+    public static keywords: string[] = [];
+    
     public getId() {
-        return OP04_087_779.id
+        return OP04_087_779.id;
     }
     
-    public getType() {
-        return OP04_087_779.type
+    public getType() : CardType {
+        return OP04_087_779.type as CardType;
     }
     
     public getImage() {
-        return OP04_087_779.image
+        return OP04_087_779.image;
     }
     
     public getName() {
-        return OP04_087_779._name
+        return OP04_087_779._name;
     }
     
     public getCost(): number {
-        return parseInt(OP04_087_779.cost)
+        return parseInt(OP04_087_779.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return OP04_087_779.keywords;
     }
 }
