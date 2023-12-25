@@ -18,6 +18,12 @@ export default class ST08_007_724 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static power: number = 1000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST08_007_724.id;
     }
@@ -40,5 +46,17 @@ export default class ST08_007_724 extends Card {
     
     public getKeywords(): string[] {
         return ST08_007_724.keywords;
+    }
+    
+    public getPower(): number {
+        return ST08_007_724.power;
+    }
+
+    public getCounter(): number {
+        return ST08_007_724.counter;
+    }
+
+    public getLife(): number {
+        return ST08_007_724.life;
     }
 }

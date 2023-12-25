@@ -18,6 +18,12 @@ export default class P_016_720 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 10000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_016_720.id;
     }
@@ -40,5 +46,17 @@ export default class P_016_720 extends Card {
     
     public getKeywords(): string[] {
         return P_016_720.keywords;
+    }
+    
+    public getPower(): number {
+        return P_016_720.power;
+    }
+
+    public getCounter(): number {
+        return P_016_720.counter;
+    }
+
+    public getLife(): number {
+        return P_016_720.life;
     }
 }

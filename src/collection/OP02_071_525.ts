@@ -18,6 +18,12 @@ export default class OP02_071_525 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 5000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 5;
+    
     public getId() {
         return OP02_071_525.id;
     }
@@ -40,5 +46,17 @@ export default class OP02_071_525 extends Card {
     
     public getKeywords(): string[] {
         return OP02_071_525.keywords;
+    }
+    
+    public getPower(): number {
+        return OP02_071_525.power;
+    }
+
+    public getCounter(): number {
+        return OP02_071_525.counter;
+    }
+
+    public getLife(): number {
+        return OP02_071_525.life;
     }
 }

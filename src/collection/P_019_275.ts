@@ -18,6 +18,12 @@ export default class P_019_275 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 2000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_019_275.id;
     }
@@ -40,5 +46,17 @@ export default class P_019_275 extends Card {
     
     public getKeywords(): string[] {
         return P_019_275.keywords;
+    }
+    
+    public getPower(): number {
+        return P_019_275.power;
+    }
+
+    public getCounter(): number {
+        return P_019_275.counter;
+    }
+
+    public getLife(): number {
+        return P_019_275.life;
     }
 }

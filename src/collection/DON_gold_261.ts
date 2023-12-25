@@ -18,6 +18,12 @@ export default class DON_gold_261 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 0;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return DON_gold_261.id;
     }
@@ -40,5 +46,17 @@ export default class DON_gold_261 extends Card {
     
     public getKeywords(): string[] {
         return DON_gold_261.keywords;
+    }
+    
+    public getPower(): number {
+        return DON_gold_261.power;
+    }
+
+    public getCounter(): number {
+        return DON_gold_261.counter;
+    }
+
+    public getLife(): number {
+        return DON_gold_261.life;
     }
 }

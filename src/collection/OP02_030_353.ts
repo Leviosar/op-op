@@ -18,6 +18,12 @@ export default class OP02_030_353 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 8000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP02_030_353.id;
     }
@@ -40,5 +46,17 @@ export default class OP02_030_353 extends Card {
     
     public getKeywords(): string[] {
         return OP02_030_353.keywords;
+    }
+    
+    public getPower(): number {
+        return OP02_030_353.power;
+    }
+
+    public getCounter(): number {
+        return OP02_030_353.counter;
+    }
+
+    public getLife(): number {
+        return OP02_030_353.life;
     }
 }

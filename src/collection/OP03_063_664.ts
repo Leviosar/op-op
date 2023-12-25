@@ -18,6 +18,12 @@ export default class OP03_063_664 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static power: number = 2000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP03_063_664.id;
     }
@@ -40,5 +46,17 @@ export default class OP03_063_664 extends Card {
     
     public getKeywords(): string[] {
         return OP03_063_664.keywords;
+    }
+    
+    public getPower(): number {
+        return OP03_063_664.power;
+    }
+
+    public getCounter(): number {
+        return OP03_063_664.counter;
+    }
+
+    public getLife(): number {
+        return OP03_063_664.life;
     }
 }

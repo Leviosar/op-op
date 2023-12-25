@@ -18,6 +18,12 @@ export default class OP02_041_339 extends Card {
     
     public static keywords: string[] = ["Blocker>\r\n[On Play] Play up to 1 cost 4 or lower <FILM> or <Straw Hat Crew"];
     
+    public static power: number = 7000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP02_041_339.id;
     }
@@ -40,5 +46,17 @@ export default class OP02_041_339 extends Card {
     
     public getKeywords(): string[] {
         return OP02_041_339.keywords;
+    }
+    
+    public getPower(): number {
+        return OP02_041_339.power;
+    }
+
+    public getCounter(): number {
+        return OP02_041_339.counter;
+    }
+
+    public getLife(): number {
+        return OP02_041_339.life;
     }
 }

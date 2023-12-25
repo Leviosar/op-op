@@ -18,6 +18,12 @@ export default class ST05_001_227 extends Card {
     
     public static keywords: string[] = ["FILM"];
     
+    public static power: number = 5000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 5;
+    
     public getId() {
         return ST05_001_227.id;
     }
@@ -40,5 +46,17 @@ export default class ST05_001_227 extends Card {
     
     public getKeywords(): string[] {
         return ST05_001_227.keywords;
+    }
+    
+    public getPower(): number {
+        return ST05_001_227.power;
+    }
+
+    public getCounter(): number {
+        return ST05_001_227.counter;
+    }
+
+    public getLife(): number {
+        return ST05_001_227.life;
     }
 }

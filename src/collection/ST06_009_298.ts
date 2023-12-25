@@ -18,6 +18,12 @@ export default class ST06_009_298 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static power: number = 4000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST06_009_298.id;
     }
@@ -40,5 +46,17 @@ export default class ST06_009_298 extends Card {
     
     public getKeywords(): string[] {
         return ST06_009_298.keywords;
+    }
+    
+    public getPower(): number {
+        return ST06_009_298.power;
+    }
+
+    public getCounter(): number {
+        return ST06_009_298.counter;
+    }
+
+    public getLife(): number {
+        return ST06_009_298.life;
     }
 }

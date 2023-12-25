@@ -18,6 +18,12 @@ export default class OP01_120_256 extends Card {
     
     public static keywords: string[] = ["Rush> (This card can attack on the turn in which it is played.)\r\n[When Attacking] During this battle, your opponent can not activate <Blocker"];
     
+    public static power: number = 10000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP01_120_256.id;
     }
@@ -40,5 +46,17 @@ export default class OP01_120_256 extends Card {
     
     public getKeywords(): string[] {
         return OP01_120_256.keywords;
+    }
+    
+    public getPower(): number {
+        return OP01_120_256.power;
+    }
+
+    public getCounter(): number {
+        return OP01_120_256.counter;
+    }
+
+    public getLife(): number {
+        return OP01_120_256.life;
     }
 }

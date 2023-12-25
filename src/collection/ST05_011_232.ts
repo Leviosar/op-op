@@ -18,6 +18,12 @@ export default class ST05_011_232 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static power: number = 10000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST05_011_232.id;
     }
@@ -40,5 +46,17 @@ export default class ST05_011_232 extends Card {
     
     public getKeywords(): string[] {
         return ST05_011_232.keywords;
+    }
+    
+    public getPower(): number {
+        return ST05_011_232.power;
+    }
+
+    public getCounter(): number {
+        return ST05_011_232.counter;
+    }
+
+    public getLife(): number {
+        return ST05_011_232.life;
     }
 }

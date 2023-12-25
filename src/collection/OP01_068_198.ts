@@ -18,6 +18,12 @@ export default class OP01_068_198 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static power: number = 5000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP01_068_198.id;
     }
@@ -40,5 +46,17 @@ export default class OP01_068_198 extends Card {
     
     public getKeywords(): string[] {
         return OP01_068_198.keywords;
+    }
+    
+    public getPower(): number {
+        return OP01_068_198.power;
+    }
+
+    public getCounter(): number {
+        return OP01_068_198.counter;
+    }
+
+    public getLife(): number {
+        return OP01_068_198.life;
     }
 }

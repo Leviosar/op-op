@@ -18,6 +18,12 @@ export default class P_003_48 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static power: number = 4000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_003_48.id;
     }
@@ -40,5 +46,17 @@ export default class P_003_48 extends Card {
     
     public getKeywords(): string[] {
         return P_003_48.keywords;
+    }
+    
+    public getPower(): number {
+        return P_003_48.power;
+    }
+
+    public getCounter(): number {
+        return P_003_48.counter;
+    }
+
+    public getLife(): number {
+        return P_003_48.life;
     }
 }

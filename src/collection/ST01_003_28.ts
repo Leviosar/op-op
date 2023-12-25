@@ -18,6 +18,12 @@ export default class ST01_003_28 extends Card {
     
     public static keywords: string[] = ["Blocker> when that Leader or Character attacks.\r\n[Trigger] K.O. 1 of your opponent's Characters with a Cost of 3 or less with <Blocker"];
     
+    public static power: number = 3000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST01_003_28.id;
     }
@@ -40,5 +46,17 @@ export default class ST01_003_28 extends Card {
     
     public getKeywords(): string[] {
         return ST01_003_28.keywords;
+    }
+    
+    public getPower(): number {
+        return ST01_003_28.power;
+    }
+
+    public getCounter(): number {
+        return ST01_003_28.counter;
+    }
+
+    public getLife(): number {
+        return ST01_003_28.life;
     }
 }

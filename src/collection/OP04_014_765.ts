@@ -18,6 +18,12 @@ export default class OP04_014_765 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
+    public static power: number = 9000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP04_014_765.id;
     }
@@ -40,5 +46,17 @@ export default class OP04_014_765 extends Card {
     
     public getKeywords(): string[] {
         return OP04_014_765.keywords;
+    }
+    
+    public getPower(): number {
+        return OP04_014_765.power;
+    }
+
+    public getCounter(): number {
+        return OP04_014_765.counter;
+    }
+
+    public getLife(): number {
+        return OP04_014_765.life;
     }
 }

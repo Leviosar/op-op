@@ -18,6 +18,12 @@ export default class ST01_012_8 extends Card {
     
     public static keywords: string[] = ["Rush>(This Character can attack the turn it enters play.)\r\n[DON!! x2][When Attacking] Your opponent's can't activate <Blocker"];
     
+    public static power: number = 6000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST01_012_8.id;
     }
@@ -40,5 +46,17 @@ export default class ST01_012_8 extends Card {
     
     public getKeywords(): string[] {
         return ST01_012_8.keywords;
+    }
+    
+    public getPower(): number {
+        return ST01_012_8.power;
+    }
+
+    public getCounter(): number {
+        return ST01_012_8.counter;
+    }
+
+    public getLife(): number {
+        return ST01_012_8.life;
     }
 }

@@ -18,6 +18,12 @@ export default class P_001_237 extends Card {
     
     public static keywords: string[] = ["Rush"];
     
+    public static power: number = 7000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_001_237.id;
     }
@@ -40,5 +46,17 @@ export default class P_001_237 extends Card {
     
     public getKeywords(): string[] {
         return P_001_237.keywords;
+    }
+    
+    public getPower(): number {
+        return P_001_237.power;
+    }
+
+    public getCounter(): number {
+        return P_001_237.counter;
+    }
+
+    public getLife(): number {
+        return P_001_237.life;
     }
 }

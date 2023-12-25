@@ -18,6 +18,12 @@ export default class OP03_070_618 extends Card {
     
     public static keywords: string[] = ["Rush"];
     
+    public static power: number = 7000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return OP03_070_618.id;
     }
@@ -40,5 +46,17 @@ export default class OP03_070_618 extends Card {
     
     public getKeywords(): string[] {
         return OP03_070_618.keywords;
+    }
+    
+    public getPower(): number {
+        return OP03_070_618.power;
+    }
+
+    public getCounter(): number {
+        return OP03_070_618.counter;
+    }
+
+    public getLife(): number {
+        return OP03_070_618.life;
     }
 }

@@ -18,6 +18,12 @@ export default class ST03_001_50 extends Card {
     
     public static keywords: string[] = ["Don!! -4"];
     
+    public static power: number = 5000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 5;
+    
     public getId() {
         return ST03_001_50.id;
     }
@@ -40,5 +46,17 @@ export default class ST03_001_50 extends Card {
     
     public getKeywords(): string[] {
         return ST03_001_50.keywords;
+    }
+    
+    public getPower(): number {
+        return ST03_001_50.power;
+    }
+
+    public getCounter(): number {
+        return ST03_001_50.counter;
+    }
+
+    public getLife(): number {
+        return ST03_001_50.life;
     }
 }

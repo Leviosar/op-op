@@ -18,6 +18,12 @@ export default class ST07_017_546 extends Card {
     
     public static keywords: string[] = [];
     
+    public static power: number = 0;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return ST07_017_546.id;
     }
@@ -40,5 +46,17 @@ export default class ST07_017_546 extends Card {
     
     public getKeywords(): string[] {
         return ST07_017_546.keywords;
+    }
+    
+    public getPower(): number {
+        return ST07_017_546.power;
+    }
+
+    public getCounter(): number {
+        return ST07_017_546.counter;
+    }
+
+    public getLife(): number {
+        return ST07_017_546.life;
     }
 }

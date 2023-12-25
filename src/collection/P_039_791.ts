@@ -18,6 +18,12 @@ export default class P_039_791 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
+    public static power: number = 6000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_039_791.id;
     }
@@ -40,5 +46,17 @@ export default class P_039_791 extends Card {
     
     public getKeywords(): string[] {
         return P_039_791.keywords;
+    }
+    
+    public getPower(): number {
+        return P_039_791.power;
+    }
+
+    public getCounter(): number {
+        return P_039_791.counter;
+    }
+
+    public getLife(): number {
+        return P_039_791.life;
     }
 }

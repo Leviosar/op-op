@@ -18,6 +18,12 @@ export default class P_018_274 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static power: number = 3000;
+
+    public static counter: number = 0;
+    
+    public static life: number = 0;
+    
     public getId() {
         return P_018_274.id;
     }
@@ -40,5 +46,17 @@ export default class P_018_274 extends Card {
     
     public getKeywords(): string[] {
         return P_018_274.keywords;
+    }
+    
+    public getPower(): number {
+        return P_018_274.power;
+    }
+
+    public getCounter(): number {
+        return P_018_274.counter;
+    }
+
+    public getLife(): number {
+        return P_018_274.life;
     }
 }
