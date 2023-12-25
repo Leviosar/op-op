@@ -1,8 +1,10 @@
 import json
+import re
+
 from pathlib import Path
 
 stub = """
-import Card from "../entities/Card";
+import Card, { CardType } from "../entities/Card";
 
 export default class %s extends Card {
     public static id: string = "%s";
@@ -15,28 +17,52 @@ export default class %s extends Card {
     
     public static image: string = "%s";
     
-    public static type: string = "%s";
+    public static type: CardType = "%s";
     
     public static cost: string = "%s";
     
+    public static keywords: string[] = [%s];
+    
+    public static power: number = %s;
+
+    public static counter: number = %s;
+    
+    public static life: number = %s;
+    
     public getId() {
-        return %s.id
+        return %s.id;
     }
     
-    public getType() {
-        return %s.type
+    public getType() : CardType {
+        return %s.type as CardType;
     }
     
     public getImage() {
-        return %s.image
+        return %s.image;
     }
     
     public getName() {
-        return %s._name
+        return %s._name;
     }
     
     public getCost(): number {
-        return parseInt(%s.cost)
+        return parseInt(%s.cost);
+    }
+    
+    public getKeywords(): string[] {
+        return %s.keywords;
+    }
+    
+    public getPower(): number {
+        return %s.power;
+    }
+
+    public getCounter(): number {
+        return %s.counter;
+    }
+
+    public getLife(): number {
+        return %s.life;
     }
 }
 """
@@ -52,6 +78,10 @@ for card in cards:
     if not file.is_file():
         if card["effect"] is not None:
             effect = card["effect"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
+            keywords = re.findall(r"(?<=\<).*(?=\>)", effect)
+            keywords = [f"\"{k}\"" for k in keywords]
+            keywords = ",".join(keywords)
+            counter = re.search(r"(?<=\[Counter\+).*(?=\])", effect)
             name = card["name"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
         
         types = {
@@ -72,7 +102,15 @@ for card in cards:
             card["source_name"], 
             card["image_url"], 
             type_,
-            card["cost"], 
+            card["cost"],
+            keywords,
+            int(card["power"]) if card["power"] is not None else 0,
+            int(counter.group()) if counter is not None else 0,
+            int(card["life"]) if card["life"] is not None else 0,
+            id_,
+            id_,
+            id_,
+            id_,
             id_,
             id_,
             id_,

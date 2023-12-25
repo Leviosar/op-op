@@ -42,7 +42,7 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row>
+    <v-row justify="center">
       <v-col cols="2"></v-col>
       <hand-area :player="players[playerId]" />
       <v-col cols="2"></v-col>
@@ -53,6 +53,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { game } from "../../store/game";
+import { log } from "../../store/log";
 import { mapState } from 'pinia'
 
 import CharacterArea from "./CharacterArea.vue";
@@ -86,7 +87,10 @@ export default defineComponent({
     }
   },
   computed: {
-    ... mapState(game, ['players'])
+    ... mapState(game, ['players']),
+    log() {
+      return log();
+    }
   }
 })
 </script>

@@ -1,21 +1,15 @@
 <template>
-  <flip-card ref="card" :locked="hasLeader" :default="true">
-    <template v-slot:front>
-      <card-front :card="player.deck.leader" />
-    </template>
-    <template v-slot:back>
-      <card-back :color="color" :border-color="borderColor" :icon="icon" />
-    </template>
-  </flip-card>
+  <game-card :card="player.deck.leader" :player="player"></game-card>
 </template>
     
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import Vue, { defineComponent, PropType } from 'vue'
 import CardBack from '../core/CardBack.vue';
 import CardFront from '../core/CardFront.vue';
 import FlipCard from '../core/FlipCard.vue';
 import Player from '../../entities/Player';
 import LogPoseIcon from '../../assets/logpose-white.png'
+import GameCard from '../core/GameCard.vue';
 
 export default defineComponent({
   data() {
@@ -29,6 +23,7 @@ export default defineComponent({
     CardBack,
     CardFront,
     FlipCard,
+    GameCard,
   },
   props: {
     player: {
@@ -37,13 +32,16 @@ export default defineComponent({
     }
   },
   computed: {
-    hasLeader() {
+    card(): Vue.Component & { toggle: () => boolean } {
+      return this.$refs.card as Vue.Component & { toggle: () => boolean };
+    },
+    hasLeader(): boolean {
       return this.player.deck.leader !== undefined
     },
   },
   watch: {
-    hasLeader(old, new_) {
-      this.$refs.card.toggle()
+    hasLeader(_) {
+      this.card.toggle()
     }
   }
 })

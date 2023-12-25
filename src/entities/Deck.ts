@@ -35,7 +35,7 @@ export default class Deck {
     }
 
     public getLeader() {
-        return this.cards.filter(c => c.getType() == "leader")[0]
+        return this.cards.filter(c => c.getType() === "leader")[0]
     }
 
     public buildFromList(list: string[]) {
@@ -43,6 +43,7 @@ export default class Deck {
         
         this.cards = list.map((item) => new (cards.filter(card => card.id.includes(item))[0])).sort(() => .5 - Math.random());
         this.leader = this.getLeader();
+        this.cards = this.cards.filter(c => c.getType() !== "leader")
         // this.cards = Array.from({ length: 10 }, (_, __) => new DON_CARD());
     }
 
