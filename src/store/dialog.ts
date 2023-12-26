@@ -26,12 +26,13 @@ export const dialog = defineStore('dialog', {
     }),
     actions: {
         open({title, text}: {title: string, text: string}) {
-            this.title = title
-            this.text = text
+            this.title = title;
+            this.text = text;
+            this.visible = true;
 
             return new Promise<boolean>((resolve, reject) => {
-                this.resolve = resolve
-                this.reject = reject
+                this.resolve = resolve;
+                this.reject = reject;
             })
         },
         confirm() {

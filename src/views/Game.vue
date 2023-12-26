@@ -18,7 +18,7 @@
           </v-col>
           <v-col cols="3">
             <!-- CardInspector -->
-            <!-- Battle log -->
+            <battle-log/>
           </v-col>
         </v-row>
       </v-container>
@@ -37,12 +37,15 @@ import { game } from "./../store/game";
 import PlayMat from '../components/PlayMat/PlayMat.vue';
 import PhaseArea from '../components/PlayMat/PhaseArea.vue';
 import TheDialog from '../components/TheDialog.vue';
+import BattleLog from '../components/PlayMat/BattleLog.vue';
+
 
 export default defineComponent({
   components: {
     PlayMat,
     PhaseArea,
     TheDialog,
+    BattleLog,
   },
   computed: {
     store() {

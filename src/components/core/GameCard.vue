@@ -23,7 +23,7 @@
       </template>
       <v-list>
         <v-list-item
-          v-for="(action, index) in card.actions"
+          v-for="(action, index) in card.actions.filter(a => a.condition())"
           :key="index"
           :value="index"
         >
@@ -43,6 +43,7 @@ import CardBack from './CardBack.vue';
 import Card from '../../entities/Card';
 import Player from '../../entities/Player';
 import { game } from '../../store/game';
+import { battle } from '../../store/battle';
 
 export default defineComponent({
   components: {
@@ -64,7 +65,16 @@ export default defineComponent({
     target() {
       if (!this.targetable) return;
       
-      this.game.targetStep(this.card)
+      switch (this.battle.step) {
+        case "targeting":
+          battle().target(this.card);
+        break;
+        case "selecting-blocker":
+          battle().blocker(this.card);
+        break;
+        default:
+          break;
+      }
     }
   },
   computed: {
@@ -75,10 +85,22 @@ export default defineComponent({
       }
     },
     targetable() {
-      return this.game.battle.started && this.card.isValidTargetForAttack && this.card.getOwner()?.id !== this.game.turn.player
+      if (!this.battle.started) return false;
+
+      switch (this.battle.step) {
+        case "targeting":
+          return ["leader", "char"].includes(this.card.getType()) && this.card.isValidTargetForAttack && this.card.getOwner()?.id !== this.game.turn.player;
+        case "selecting-blocker":
+          return this.card.getKeywords().includes("Blocker") && !this.card.tapped;   
+        default:
+          break;
+      }
     },
     game() {
       return game();
+    },
+    battle() {
+      return battle();
     }
   },
 })

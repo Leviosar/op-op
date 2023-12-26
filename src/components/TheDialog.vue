@@ -1,5 +1,6 @@
 <template>
   <v-dialog
+    width="500"
     persistent  
     v-model="dialog.visible"
   >

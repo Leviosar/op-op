@@ -1,8 +1,9 @@
 import Card from "./Card";
 import Deck from "./Deck";
-import BlockingOption from "./BlockingOption";
-import { log } from "../store/log";
 import CounterOption from "./CounterOption";
+import { log } from "../store/log";
+import { dialog } from "../store/dialog";
+import { battle } from "../store/battle";
 
 export default class Player {
     public deck: Deck;
@@ -20,6 +21,10 @@ export default class Player {
     public lifeCards: Card[];
 
     public stage: Card | null = null;
+
+    get untappedDons(): number {
+        return this.cost.filter(c => !c.tapped).length;
+    }
 
     constructor(id: number) {
         this.deck = new Deck();
@@ -71,22 +76,23 @@ export default class Player {
         }
     }
 
-    public async promptToDefend(): Promise<BlockingOption> {
+    public async promptToBlock() {
         const availableBlockers = this.characters.filter((c) => c.getKeywords().includes("Blocker"))
 
         if (availableBlockers.length === 0) {
             log().add(`Player ${this.id} doesn't have any available blocker`)
             
-            return {
-                response: false,
-                blocker: null,
-            } as BlockingOption
+            battle().blocker(null);
         }
 
-        return {
-            response: true,
-            blocker: null,
-        }
+        const response = await dialog().open({
+            title: "Your opponent declared an attack",
+            text: "You may choose a blocker or take the hit"
+        })
+
+        if (!response) battle().blocker(null);
+
+        battle().step = "selecting-blocker";
     }
 
     public async promptToCounter(): Promise<CounterOption> {

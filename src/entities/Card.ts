@@ -1,3 +1,4 @@
+import { battle } from "../store/battle";
 import { game } from "../store/game";
 import { log } from "../store/log";
 import CardAction from "./CardAction";
@@ -28,7 +29,7 @@ export default class Card {
 
     public _tapped: boolean = false;
     
-    public summonedAt: number = -1;
+    public summonedAt: number = 0;
 
     public source: string = "";
 
@@ -90,29 +91,37 @@ export default class Card {
         return this._tapped;
     }
 
-    get isValidTargetForAttack() {
+    get isValidTargetForAttack(): boolean {
         return this.tapped || this.getType() === 'leader';
+    }
+
+    get canAttack(): boolean {
+        return !this.tapped && (game().turn.count - this.summonedAt > 0)
+    }
+
+    get isOwnerTurn(): boolean {
+        return this.getOwner()?.id === game().turn.player;
     }
 
     get actions(): CardAction[] {
         const types: Record<string, CardAction[]> = {
             "don": [
-                { id: "attach", name: "Attach" },
+                { id: "attach", name: "Attach", condition: () => this.isOwnerTurn && !this.tapped },
             ],
             "char": [
-                { id: "summon", name: "Summon" },
-                { id: "trigger", name: "Effect" },
-                { id: "attack", name: "Attack"},
+                { id: "summon", name: "Summon", condition: () => this.getOwner() !== undefined && this.isOwnerTurn && this.getCost() <= this.getOwner()!.untappedDons },
+                { id: "trigger", name: "Effect", condition: () => this.isOwnerTurn },
+                { id: "attack", name: "Attack", condition: () => this.isOwnerTurn && this.canAttack},
             ],
             "leader": [
-                { id: "trigger", name: "Effect" },
-                { id: "attack", name: "Attack"},
+                { id: "trigger", name: "Effect", condition: () => this.isOwnerTurn && this.canAttack },
+                { id: "attack", name: "Attack", condition: () => this.isOwnerTurn && this.canAttack },
             ],
             "stage": [
-                { id: "trigger", name: "Effect" },
+                { id: "trigger", name: "Effect", condition: () => this.isOwnerTurn && this.canAttack },
             ],
             "event": [
-                { id: "trigger", name: "Effect" },
+                { id: "trigger", name: "Effect", condition: () => this.getOwner() !== undefined && this.isOwnerTurn && this.getCost() <= this.getOwner()!.untappedDons },
             ]
         }
 
@@ -150,6 +159,7 @@ export default class Card {
         }
 
         player.pay(this.getCost())
+        this.summonedAt = game().turn.count;
 
         log().add(`Player ${player.id} summoned ${this.getName()}`, "debug", { card: this })
 
@@ -183,7 +193,7 @@ export default class Card {
 
     public attack(_: CardActionMetadata | null) {
         this.tap();
-        game().startBattle(this);
+        battle().start(this);
     }
 
     // public async attack_old(attacker: Player, _: CardActionMetadata | null) {
