@@ -18,7 +18,7 @@ export default class OP02_061_473 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Giant","Revolutionary Army"];
+    public static archetypes: string[] = ["Giant","Revolutionary Army"];
     
     public static power: number = 5000;
 

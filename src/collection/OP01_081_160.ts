@@ -18,7 +18,7 @@ export default class OP01_081_160 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Punk Hazard"];
+    public static archetypes: string[] = ["Punk Hazard"];
     
     public static power: number = 5000;
 

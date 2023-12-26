@@ -18,7 +18,7 @@ export default class P_020_270 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["FILM","Navy"];
+    public static archetypes: string[] = ["FILM","Navy"];
     
     public static power: number = 2000;
 

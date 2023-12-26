@@ -18,7 +18,7 @@ export default class ST08_013_739 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Former Baroque Works"];
+    public static archetypes: string[] = ["Former Baroque Works"];
     
     public static power: number = 6000;
 

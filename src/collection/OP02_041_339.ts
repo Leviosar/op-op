@@ -18,7 +18,7 @@ export default class OP02_041_339 extends Card {
     
     public static keywords: string[] = ["Blocker>\r\n[On Play] Play up to 1 cost 4 or lower <FILM> or <Straw Hat Crew"];
     
-    public static archetype: string[] = ["FILM","Supernovas","Straw Hat Crew"];
+    public static archetypes: string[] = ["FILM","Supernovas","Straw Hat Crew"];
     
     public static power: number = 7000;
 

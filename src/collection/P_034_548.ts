@@ -18,7 +18,7 @@ export default class P_034_548 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Vinsmoke Family"];
+    public static archetypes: string[] = ["Vinsmoke Family"];
     
     public static power: number = 4000;
 

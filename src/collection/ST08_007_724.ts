@@ -18,7 +18,7 @@ export default class ST08_007_724 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Alabasta Kingdom"];
+    public static archetypes: string[] = ["Alabasta Kingdom"];
     
     public static power: number = 1000;
 

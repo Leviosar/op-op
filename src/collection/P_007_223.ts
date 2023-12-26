@@ -18,7 +18,7 @@ export default class P_007_223 extends Card {
     
     public static keywords: string[] = ["Strike"];
     
-    public static archetype: string[] = ["Supernovas","Straw Hat Crew"];
+    public static archetypes: string[] = ["Supernovas","Straw Hat Crew"];
     
     public static power: number = 5000;
 

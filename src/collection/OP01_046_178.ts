@@ -18,7 +18,7 @@ export default class OP01_046_178 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Wano Country","Nine Red Scabbards"];
+    public static archetypes: string[] = ["Wano Country","Nine Red Scabbards"];
     
     public static power: number = 7000;
 

@@ -18,7 +18,7 @@ export default class P_003_48 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
-    public static archetype: string[] = ["Supernovas","Kid Pirates"];
+    public static archetypes: string[] = ["Supernovas","Kid Pirates"];
     
     public static power: number = 4000;
 

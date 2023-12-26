@@ -18,7 +18,7 @@ export default class OP03_013_707 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Whitebeard Pirates"];
+    public static archetypes: string[] = ["Whitebeard Pirates"];
     
     public static power: number = 6000;
 

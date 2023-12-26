@@ -18,7 +18,7 @@ export default class OP03_033_643 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Fish-Man","East Blue","Arlong Crew"];
+    public static archetypes: string[] = ["Fish-Man","East Blue","Arlong Crew"];
     
     public static power: number = 4000;
 

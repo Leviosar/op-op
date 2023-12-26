@@ -18,7 +18,7 @@ export default class P_005_77 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
-    public static archetype: string[] = ["Four Emperors","Animal Kingdom Pirates"];
+    public static archetypes: string[] = ["Four Emperors","Animal Kingdom Pirates"];
     
     public static power: number = 8000;
 

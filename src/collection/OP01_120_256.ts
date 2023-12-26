@@ -18,7 +18,7 @@ export default class OP01_120_256 extends Card {
     
     public static keywords: string[] = ["Rush> (This card can attack on the turn in which it is played.)\r\n[When Attacking] During this battle, your opponent can not activate <Blocker"];
     
-    public static archetype: string[] = ["Four Emperors","Red Haired Pirates"];
+    public static archetypes: string[] = ["Four Emperors","Red Haired Pirates"];
     
     public static power: number = 10000;
 

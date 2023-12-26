@@ -18,7 +18,7 @@ export default class ST07_001_533 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Four Emperors","Big Mom Pirates"];
+    public static archetypes: string[] = ["The Four Emperors","Big Mom Pirates"];
     
     public static power: number = 5000;
 

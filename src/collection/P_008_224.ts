@@ -18,7 +18,7 @@ export default class P_008_224 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Wano Country"];
+    public static archetypes: string[] = ["Wano Country"];
     
     public static power: number = 5000;
 

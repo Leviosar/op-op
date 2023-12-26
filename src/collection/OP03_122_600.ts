@@ -18,7 +18,7 @@ export default class OP03_122_600 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Sniper Island"];
+    public static archetypes: string[] = ["Sniper Island"];
     
     public static power: number = 6000;
 

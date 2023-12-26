@@ -18,7 +18,7 @@ export default class ST06_007_296 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Navy"];
+    public static archetypes: string[] = ["Navy"];
     
     public static power: number = 2000;
 

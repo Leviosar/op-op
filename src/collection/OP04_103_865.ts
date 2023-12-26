@@ -18,7 +18,7 @@ export default class OP04_103_865 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Land of Wano","Kouzuki Clan"];
+    public static archetypes: string[] = ["Land of Wano","Kouzuki Clan"];
     
     public static power: number = 0;
 

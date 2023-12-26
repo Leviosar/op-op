@@ -18,7 +18,7 @@ export default class OP03_115_698 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Big Mom Pirates"];
+    public static archetypes: string[] = ["Big Mom Pirates"];
     
     public static power: number = 1000;
 

@@ -18,7 +18,7 @@ export default class OP02_021_452 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Four Emperors","Whitebeard Pirates"];
+    public static archetypes: string[] = ["The Four Emperors","Whitebeard Pirates"];
     
     public static power: number = 0;
 

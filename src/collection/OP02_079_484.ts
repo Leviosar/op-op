@@ -18,7 +18,7 @@ export default class OP02_079_484 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["FILM","The Pirates Fest"];
+    public static archetypes: string[] = ["FILM","The Pirates Fest"];
     
     public static power: number = 6000;
 

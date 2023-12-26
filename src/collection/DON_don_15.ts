@@ -18,7 +18,7 @@ export default class DON_don_15 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = [];
+    public static archetypes: string[] = [];
     
     public static power: number = 0;
 

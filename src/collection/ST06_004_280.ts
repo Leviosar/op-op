@@ -18,7 +18,7 @@ export default class ST06_004_280 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
-    public static archetype: string[] = ["Navy"];
+    public static archetypes: string[] = ["Navy"];
     
     public static power: number = 7000;
 

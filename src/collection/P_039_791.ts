@@ -18,7 +18,7 @@ export default class P_039_791 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
-    public static archetype: string[] = ["Bellamy Pirates"];
+    public static archetypes: string[] = ["Bellamy Pirates"];
     
     public static power: number = 6000;
 

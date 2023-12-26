@@ -18,7 +18,7 @@ export default class P_014_269 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["FILM","Navy"];
+    public static archetypes: string[] = ["FILM","Navy"];
     
     public static power: number = 3000;
 

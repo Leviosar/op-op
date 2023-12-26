@@ -18,7 +18,7 @@ export default class OP04_070_840 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Baroque Works"];
+    public static archetypes: string[] = ["Baroque Works"];
     
     public static power: number = 4000;
 

@@ -18,7 +18,7 @@ export default class OP03_098_685 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["World Government"];
+    public static archetypes: string[] = ["World Government"];
     
     public static power: number = 0;
 

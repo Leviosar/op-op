@@ -18,7 +18,7 @@ export default class OP02_027_326 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Mink Tribe","Wano Country","Nine Red Scabbards"];
+    public static archetypes: string[] = ["Mink Tribe","Wano Country","Nine Red Scabbards"];
     
     public static power: number = 4000;
 

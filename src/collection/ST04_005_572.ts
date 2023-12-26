@@ -18,7 +18,7 @@ export default class ST04_005_572 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Animal Kingdom Pirates"];
+    public static archetypes: string[] = ["Animal Kingdom Pirates"];
     
     public static power: number = 6000;
 

@@ -18,7 +18,7 @@ export default class OP01_075_202 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Biological Weapon","Navy"];
+    public static archetypes: string[] = ["Biological Weapon","Navy"];
     
     public static power: number = 5000;
 

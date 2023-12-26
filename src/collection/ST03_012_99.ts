@@ -18,7 +18,7 @@ export default class ST03_012_99 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Biological Weapon","Navy"];
+    public static archetypes: string[] = ["Biological Weapon","Navy"];
     
     public static power: number = 6000;
 

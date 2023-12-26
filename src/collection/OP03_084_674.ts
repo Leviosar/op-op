@@ -18,7 +18,7 @@ export default class OP03_084_674 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["CP6"];
+    public static archetypes: string[] = ["CP6"];
     
     public static power: number = 4000;
 

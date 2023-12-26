@@ -18,7 +18,7 @@ export default class ST05_003_262 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["FILM","Pirate Fest"];
+    public static archetypes: string[] = ["FILM","Pirate Fest"];
     
     public static power: number = 3000;
 

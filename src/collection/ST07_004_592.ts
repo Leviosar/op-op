@@ -18,7 +18,7 @@ export default class ST07_004_592 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
-    public static archetype: string[] = ["Big Mom Pirates"];
+    public static archetypes: string[] = ["Big Mom Pirates"];
     
     public static power: number = 6000;
 

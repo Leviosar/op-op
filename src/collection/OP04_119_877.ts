@@ -18,7 +18,7 @@ export default class OP04_119_877 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Navy","Donquixote Pirates"];
+    public static archetypes: string[] = ["Navy","Donquixote Pirates"];
     
     public static power: number = 8000;
 

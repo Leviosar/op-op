@@ -18,7 +18,7 @@ export default class OP02_005_317 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Mountain Bandit"];
+    public static archetypes: string[] = ["Mountain Bandit"];
     
     public static power: number = 3000;
 

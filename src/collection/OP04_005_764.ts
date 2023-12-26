@@ -18,7 +18,7 @@ export default class OP04_005_764 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Animal","Alabasta Kingdom"];
+    public static archetypes: string[] = ["Animal","Alabasta Kingdom"];
     
     public static power: number = 1000;
 

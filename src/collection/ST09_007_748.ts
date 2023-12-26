@@ -18,7 +18,7 @@ export default class ST09_007_748 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Land of Wano"];
+    public static archetypes: string[] = ["Land of Wano"];
     
     public static power: number = 2000;
 

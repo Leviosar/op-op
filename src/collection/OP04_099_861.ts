@@ -18,7 +18,7 @@ export default class OP04_099_861 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Land of Wano","The Four Emperors","Big Mom Pirates"];
+    public static archetypes: string[] = ["Land of Wano","The Four Emperors","Big Mom Pirates"];
     
     public static power: number = 7000;
 

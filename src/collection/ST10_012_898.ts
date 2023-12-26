@@ -18,7 +18,7 @@ export default class ST10_012_898 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Minks","Heart Pirates"];
+    public static archetypes: string[] = ["Minks","Heart Pirates"];
     
     public static power: number = 5000;
 

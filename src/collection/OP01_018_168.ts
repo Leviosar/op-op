@@ -18,7 +18,7 @@ export default class OP01_018_168 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Giants","New Giant Warrior Pirates"];
+    public static archetypes: string[] = ["Giants","New Giant Warrior Pirates"];
     
     public static power: number = 6000;
 

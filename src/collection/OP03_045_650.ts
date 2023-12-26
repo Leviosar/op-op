@@ -18,7 +18,7 @@ export default class OP03_045_650 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["East Blue"];
+    public static archetypes: string[] = ["East Blue"];
     
     public static power: number = 3000;
 

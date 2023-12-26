@@ -18,7 +18,7 @@ export default class OP04_116_875 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Vinsmoke Family"];
+    public static archetypes: string[] = ["The Vinsmoke Family"];
     
     public static power: number = 0;
 

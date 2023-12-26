@@ -18,7 +18,7 @@ export default class OP04_014_765 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
-    public static archetype: string[] = ["Alabasta Kingdom","Straw Hat Crew"];
+    public static archetypes: string[] = ["Alabasta Kingdom","Straw Hat Crew"];
     
     public static power: number = 9000;
 

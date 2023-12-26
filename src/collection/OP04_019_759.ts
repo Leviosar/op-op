@@ -18,7 +18,7 @@ export default class OP04_019_759 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Seven Warlords of the Sea","Donquixote Pirates"];
+    public static archetypes: string[] = ["The Seven Warlords of the Sea","Donquixote Pirates"];
     
     public static power: number = 5000;
 

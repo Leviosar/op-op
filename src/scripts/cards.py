@@ -23,7 +23,7 @@ export default class %s extends Card {
     
     public static keywords: string[] = [%s];
     
-    public static archetype: string[] = [%s];
+    public static archetypes: string[] = [%s];
     
     public static power: number = %s;
 

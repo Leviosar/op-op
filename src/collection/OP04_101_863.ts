@@ -18,7 +18,7 @@ export default class OP04_101_863 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The House of Lambs"];
+    public static archetypes: string[] = ["The House of Lambs"];
     
     public static power: number = 1000;
 

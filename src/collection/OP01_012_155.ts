@@ -18,7 +18,7 @@ export default class OP01_012_155 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Happosui Army"];
+    public static archetypes: string[] = ["Happosui Army"];
     
     public static power: number = 4000;
 

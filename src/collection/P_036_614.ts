@@ -18,7 +18,7 @@ export default class P_036_614 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Land of Wano","Straw Hat Crew"];
+    public static archetypes: string[] = ["Land of Wano","Straw Hat Crew"];
     
     public static power: number = 4000;
 

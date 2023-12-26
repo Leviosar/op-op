@@ -18,7 +18,7 @@ export default class OP04_044_823 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Four Emperors","Animal Kingdom Pirates"];
+    public static archetypes: string[] = ["The Four Emperors","Animal Kingdom Pirates"];
     
     public static power: number = 12000;
 

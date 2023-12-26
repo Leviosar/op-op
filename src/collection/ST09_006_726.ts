@@ -18,7 +18,7 @@ export default class ST09_006_726 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Land of Wano","Kozuki Family"];
+    public static archetypes: string[] = ["Land of Wano","Kozuki Family"];
     
     public static power: number = 4000;
 

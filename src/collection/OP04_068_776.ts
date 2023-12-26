@@ -18,7 +18,7 @@ export default class OP04_068_776 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Animal","Water 7"];
+    public static archetypes: string[] = ["Animal","Water 7"];
     
     public static power: number = 3000;
 

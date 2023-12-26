@@ -18,7 +18,7 @@ export default class ST01_016_27 extends Card {
     
     public static keywords: string[] = ["Blocker> when that Leader or Character attacks.\r\n[Trigger] K.O. 1 of your opponent's Characters with a Cost of 3 or less with <Blocker"];
     
-    public static archetype: string[] = ["Straw Hat Crew"];
+    public static archetypes: string[] = ["Straw Hat Crew"];
     
     public static power: number = 0;
 

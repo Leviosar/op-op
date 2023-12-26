@@ -18,7 +18,7 @@ export default class OP04_042_821 extends Card {
     
     public static keywords: string[] = ["Slash"];
     
-    public static archetype: string[] = ["East Blue"];
+    public static archetypes: string[] = ["East Blue"];
     
     public static power: number = 1000;
 

@@ -18,7 +18,7 @@ export default class OP04_118_808 extends Card {
     
     public static keywords: string[] = ["Rush"];
     
-    public static archetype: string[] = ["Alabasta Kingdom"];
+    public static archetypes: string[] = ["Alabasta Kingdom"];
     
     public static power: number = 4000;
 

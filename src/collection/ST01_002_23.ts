@@ -18,7 +18,7 @@ export default class ST01_002_23 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Straw Hat Crew"];
+    public static archetypes: string[] = ["Straw Hat Crew"];
     
     public static power: number = 2000;
 

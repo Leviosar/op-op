@@ -18,7 +18,7 @@ export default class OP04_110_871 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
-    public static archetype: string[] = ["Whole Cake Island"];
+    public static archetypes: string[] = ["Whole Cake Island"];
     
     public static power: number = 3000;
 

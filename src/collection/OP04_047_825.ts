@@ -18,7 +18,7 @@ export default class OP04_047_825 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Plague","Animal Kingdom Pirates"];
+    public static archetypes: string[] = ["Plague","Animal Kingdom Pirates"];
     
     public static power: number = 0;
 

@@ -18,7 +18,7 @@ export default class OP02_015_447 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["Windmill Village"];
+    public static archetypes: string[] = ["Windmill Village"];
     
     public static power: number = 0;
 

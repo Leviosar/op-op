@@ -18,7 +18,7 @@ export default class ST03_011_95 extends Card {
     
     public static keywords: string[] = [];
     
-    public static archetype: string[] = ["The Seven Warlords of the Sea","Buggy's Delivery"];
+    public static archetypes: string[] = ["The Seven Warlords of the Sea","Buggy's Delivery"];
     
     public static power: number = 3000;
 
