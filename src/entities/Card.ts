@@ -8,6 +8,8 @@ import { v4 as uuid } from 'uuid';
 
 export type CardType = "char" | "don" | "leader" | "stage" | "event";
 
+export type CardLocation = "deck" | "don-deck" | "cost-area" | "character-area" | "leader-area" | "stage-area" | "trashed" | "hand";
+
 export default class Card {
     public uuid: string = uuid();
 
@@ -38,6 +40,8 @@ export default class Card {
     public attached: Card[] = [];
 
     public owner: Player | undefined = undefined;
+
+    public location: CardLocation = "deck";
 
     public getImage(): string {
         return "";
@@ -109,7 +113,7 @@ export default class Card {
                 { id: "attach", name: "Attach", condition: () => this.isOwnerTurn && !this.tapped },
             ],
             "char": [
-                { id: "summon", name: "Summon", condition: () => this.getOwner() !== undefined && this.isOwnerTurn && this.getCost() <= this.getOwner()!.untappedDons },
+                { id: "summon", name: "Summon", condition: () => this.getOwner() !== undefined && this.isOwnerTurn && this.getCost() <= this.getOwner()!.untappedDons && this.location === "hand" },
                 { id: "trigger", name: "Effect", condition: () => this.isOwnerTurn },
                 { id: "attack", name: "Attack", condition: () => this.isOwnerTurn && this.canAttack},
             ],
@@ -160,6 +164,7 @@ export default class Card {
 
         player.pay(this.getCost())
         this.summonedAt = game().turn.count;
+        this.location = "character-area";
 
         log().add(`Player ${player.id} summoned ${this.getName()}`, "debug", { card: this })
 

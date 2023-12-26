@@ -57,7 +57,7 @@ export default class Player {
             }
 
             // activate trigger effect 
-
+            card.location = "hand";
             this.hand.push(card);
         }
     }
@@ -66,6 +66,7 @@ export default class Player {
         for (let i = 0; i < amount; i++) {
             const card = this.deck.pop();
             card.owner = this;
+            card.location = "hand";
             this.hand.push(card);
         }
     }

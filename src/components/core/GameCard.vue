@@ -91,7 +91,9 @@ export default defineComponent({
         case "targeting":
           return ["leader", "char"].includes(this.card.getType()) && this.card.isValidTargetForAttack && this.card.getOwner()?.id !== this.game.turn.player;
         case "selecting-blocker":
-          return this.card.getKeywords().includes("Blocker") && !this.card.tapped;   
+          return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
+        case "selecting-counters":
+          return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
         default:
           break;
       }
