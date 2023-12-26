@@ -6,7 +6,7 @@ export default class ST08_010_737 extends Card {
     
     public static _name: string = "Monkey D Garp";
 
-    public effect: string = "[On Play] If there is a Character with a Cost of 0 in play, draw 1 card.";
+    public effect: string = "";
     
     public source: string = "Side - Monkey D. Luffy [ST-08]";
     
@@ -20,7 +20,7 @@ export default class ST08_010_737 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

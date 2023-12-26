@@ -6,7 +6,7 @@ export default class OP01_092_205 extends Card {
     
     public static _name: string = "Urashima";
 
-    public effect: string = "[Your Turn] If you have 10 DON!! cards on your field, give all of your opponent's Characters -1000 power.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_092_205 extends Card {
     
     public static power: number = 9000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

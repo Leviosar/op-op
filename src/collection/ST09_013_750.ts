@@ -6,7 +6,7 @@ export default class ST09_013_750 extends Card {
     
     public static _name: string = "Yamato";
 
-    public effect: string = "[Once Per Turn] If this Character would be KO'ed, you can trash 1 card from the top or bottom of your Life Area instead.";
+    public effect: string = "";
     
     public source: string = "Side - Yamato [ST-09]";
     
@@ -20,7 +20,7 @@ export default class ST09_013_750 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

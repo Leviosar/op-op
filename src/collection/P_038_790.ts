@@ -20,7 +20,7 @@ export default class P_038_790 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

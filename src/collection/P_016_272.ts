@@ -6,7 +6,7 @@ export default class P_016_272 extends Card {
     
     public static _name: string = "Shanks";
 
-    public effect: string = "[On Play] Your Leader or up to 1 of your Characters gains +1000 Power during this turn.";
+    public effect: string = "";
     
     public source: string = "Promo [P]";
     
@@ -20,7 +20,7 @@ export default class P_016_272 extends Card {
     
     public static power: number = 10000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

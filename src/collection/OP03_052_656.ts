@@ -6,7 +6,7 @@ export default class OP03_052_656 extends Card {
     
     public static _name: string = "Merry";
 
-    public effect: string = "[DON!!x1] When your opponent takes damage to their Life through the attack of this Character, you may trash 7 cards from the top of your deck.\r\n[On K.O] You may trash 3 cards from the top of your deck.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_052_656 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

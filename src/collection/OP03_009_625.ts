@@ -20,7 +20,7 @@ export default class OP03_009_625 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

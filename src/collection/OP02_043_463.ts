@@ -6,7 +6,7 @@ export default class OP02_043_463 extends Card {
     
     public static _name: string = "Roronoa Zoro";
 
-    public effect: string = "Also treat this card's name as [Kozuki Oden] according to the rules.\r\n[On Play] Rest up to 1 of your opponent's Characters with a cost of 6 or less.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_043_463 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

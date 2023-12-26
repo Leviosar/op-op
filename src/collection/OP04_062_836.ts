@@ -6,7 +6,7 @@ export default class OP04_062_836 extends Card {
     
     public static _name: string = "Bananagator";
 
-    public effect: string = "[Activate: Main] You may trash this Character: If your Leader has the {Water Seven} type, add up to 1 DON!! card from your DON!! deck and rest it.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_062_836 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

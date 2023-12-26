@@ -6,7 +6,7 @@ export default class OP02_080_485 extends Card {
     
     public static _name: string = "Dobon";
 
-    public effect: string = "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 1 of your opponent's Characters with a cost of 4 or less.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_080_485 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

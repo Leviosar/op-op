@@ -6,7 +6,7 @@ export default class ST06_013_292 extends Card {
     
     public static _name: string = "T-Bone";
 
-    public effect: string = "[Counter] Give up to 1 of your Leader or Characters +4000 Power during this battle. Then, K.O. up to 1 of your opponent's active Characters with a cost of 3 or less.\r\n[Trigger] K.O. up to 1 of your opponent's cost 4 or lower Characters.";
+    public effect: string = "";
     
     public source: string = "Navy [ST-06]";
     
@@ -20,7 +20,7 @@ export default class ST06_013_292 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

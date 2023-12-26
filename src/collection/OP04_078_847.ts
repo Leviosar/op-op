@@ -6,7 +6,7 @@ export default class OP04_078_847 extends Card {
     
     public static _name: string = "Oimo & Kashii";
 
-    public effect: string = "[Counter] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Up to 1 of your Leader or Character cards gains +1000 power during this turn.\r\n[Trigger] Add up to 1 DON!! card from your DON!! deck and set it as active.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_078_847 extends Card {
     
     public static power: number = 8000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

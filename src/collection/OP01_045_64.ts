@@ -6,7 +6,7 @@ export default class OP01_045_64 extends Card {
     
     public static _name: string = "Jean Bart";
 
-    public effect: string = "[On Play] Look at the top 5 cards of your deck, rearrange them in any order, then return them to the top or bottom of the deck.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_045_64 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

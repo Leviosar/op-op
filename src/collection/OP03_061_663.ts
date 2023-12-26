@@ -6,7 +6,7 @@ export default class OP03_061_663 extends Card {
     
     public static _name: string = "Kiwi & Mozu";
 
-    public effect: string = "[When Attacking] DON!! -1: Draw 2 cards, then discard 1 card from hand.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_061_663 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

@@ -6,7 +6,7 @@ export default class OP03_085_675 extends Card {
     
     public static _name: string = "Jabra";
 
-    public effect: string = "[On Play] Look at the top 5 cards of your deck, and place up to 2 of them in the trash. Then place the remaining cards on the bottom of your deck in any order.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_085_675 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

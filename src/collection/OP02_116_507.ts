@@ -6,7 +6,7 @@ export default class OP02_116_507 extends Card {
     
     public static _name: string = "Yamakaji";
 
-    public effect: string = "[DON!! x2] [When Attacking] K.O. up to 1 of your opponent's Characters with a cost of 0.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_116_507 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

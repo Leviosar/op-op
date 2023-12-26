@@ -6,7 +6,7 @@ export default class ST01_010_242 extends Card {
     
     public static _name: string = "Franky";
 
-    public effect: string = "<Blocker>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)";
+    public effect: string = "";
     
     public source: string = "Straw Hat Crew [ST-01]";
     
@@ -16,11 +16,11 @@ export default class ST01_010_242 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

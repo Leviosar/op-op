@@ -6,7 +6,7 @@ export default class OP01_012_155 extends Card {
     
     public static _name: string = "Sai";
 
-    public effect: string = "[On Play] (1) (You may rest the specified number of DON!! cards in your Cost Area): Add 1 card from your DON!! deck and rest it.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_012_155 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

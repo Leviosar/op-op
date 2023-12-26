@@ -6,7 +6,7 @@ export default class P_022_277 extends Card {
     
     public static _name: string = "Monkey D. Luffy";
 
-    public effect: string = "[DON!! x1] [When attacking] K.O. up to 1 of your opponent's Characters with 3000 or less Power.";
+    public effect: string = "";
     
     public source: string = "Promo [P]";
     
@@ -20,7 +20,7 @@ export default class P_022_277 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

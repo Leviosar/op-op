@@ -6,7 +6,7 @@ export default class ST07_006_593 extends Card {
     
     public static _name: string = "Charlotte Flampe";
 
-    public effect: string = "[DON!!x1] [When Attacking] You may add the top or bottom card of your Life area to your hand: This Character gains <Banish> and 1000 power for this battle.";
+    public effect: string = "";
     
     public source: string = "Big Mom Pirates [ST-07]";
     
@@ -16,11 +16,11 @@ export default class ST07_006_593 extends Card {
     
     public static cost: string = "2";
     
-    public static keywords: string[] = ["Banish"];
+    public static keywords: string[] = [];
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

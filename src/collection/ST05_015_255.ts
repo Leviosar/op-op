@@ -6,7 +6,7 @@ export default class ST05_015_255 extends Card {
     
     public static _name: string = "Dr. Indigo";
 
-    public effect: string = "[Trigger] Play this card.";
+    public effect: string = "";
     
     public source: string = "One Piece Film Edition [ST-05]";
     
@@ -20,7 +20,7 @@ export default class ST05_015_255 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

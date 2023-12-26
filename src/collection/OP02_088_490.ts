@@ -6,7 +6,7 @@ export default class OP02_088_490 extends Card {
     
     public static _name: string = "Sphinx";
 
-    public effect: string = "<Double Attack> (This card deals 2 damage.)\r\n[On K.O.] If your Leader has {{Impel Down}} as a type, add 1 DON!! card from your DON!! deck and rest it.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -16,11 +16,11 @@ export default class OP02_088_490 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Double Attack"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

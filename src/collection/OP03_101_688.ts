@@ -6,7 +6,7 @@ export default class OP03_101_688 extends Card {
     
     public static _name: string = "Camie";
 
-    public effect: string = "[Trigger] You may trash the top or bottom card of your Life: Play this card.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_101_688 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

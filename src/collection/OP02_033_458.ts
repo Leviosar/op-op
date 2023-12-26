@@ -6,7 +6,7 @@ export default class OP02_033_458 extends Card {
     
     public static _name: string = "Jinbe";
 
-    public effect: string = "[On Play] (2) (You may rest the specified number of DON!! cards in your cost area.): Set up to 1 of your {Minks} type Characters with a cost of 5 or less as active.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_033_458 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

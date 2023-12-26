@@ -6,7 +6,7 @@ export default class OP04_107_868 extends Card {
     
     public static _name: string = "Charlotte Perospero";
 
-    public effect: string = "[Activate: Main] [Once Per Turn] You may trash 1 card with a [Trigger] from your hand: Rest up to 1 of your opponent's Characters with a cost of 2 or less.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_107_868 extends Card {
     
     public static power: number = 8000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

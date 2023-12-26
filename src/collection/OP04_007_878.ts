@@ -6,7 +6,7 @@ export default class OP04_007_878 extends Card {
     
     public static _name: string = "Sanji";
 
-    public effect: string = "[Opponent's Turn] If this Character is rested, your active Characters with a base cost of 5 cannot be K.O.'d by effects.\r\n[On Play] You may rest this Character: Play up to 1 green Character card with a cost of 5 from your hand.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_007_878 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

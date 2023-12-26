@@ -6,7 +6,7 @@ export default class ST06_009_298 extends Card {
     
     public static _name: string = "Fullbody";
 
-    public effect: string = "<Blocker>(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)";
+    public effect: string = "";
     
     public source: string = "Navy [ST-06]";
     
@@ -16,11 +16,11 @@ export default class ST06_009_298 extends Card {
     
     public static cost: string = "2";
     
-    public static keywords: string[] = ["Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

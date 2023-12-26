@@ -6,7 +6,7 @@ export default class OP01_065_162 extends Card {
     
     public static _name: string = "Vergo";
 
-    public effect: string = "[DON!!x1] [Your Turn] For each card in your hand, +1000 power for this character.\r\n";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_065_162 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

@@ -6,7 +6,7 @@ export default class OP04_114_874 extends Card {
     
     public static _name: string = "Randolph";
 
-    public effect: string = "[Trigger] Play this card.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_114_874 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

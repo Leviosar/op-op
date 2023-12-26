@@ -6,7 +6,7 @@ export default class OP02_020_451 extends Card {
     
     public static _name: string = "Little Oars Jr.";
 
-    public effect: string = "[DON!! x1] [Your Turn] All of your Characters with a type including \"Whitebeard Pirates\" gain +1000 power.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_020_451 extends Card {
     
     public static power: number = 9000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

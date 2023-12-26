@@ -6,7 +6,7 @@ export default class OP01_036_173 extends Card {
     
     public static _name: string = "Otsuru";
 
-    public effect: string = "[On Play] Rest 1 of your opponent's Characters with a cost of 4 or less.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_036_173 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

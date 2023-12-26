@@ -6,7 +6,7 @@ export default class ST03_011_95 extends Card {
     
     public static _name: string = "Buggy";
 
-    public effect: string = "[DON!! x1] [Activate Main] [Once Per Turn] (2) (Rest the designated amount of DON!! cards in your Cost Area.): Play up to 1 cost 4 or lower [Pacifista] from your deck. Then, shuffle your deck.";
+    public effect: string = "";
     
     public source: string = "The Seven Warlords of the Sea [ST-03]";
     
@@ -20,7 +20,7 @@ export default class ST03_011_95 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

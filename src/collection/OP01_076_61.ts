@@ -6,7 +6,7 @@ export default class OP01_076_61 extends Card {
     
     public static _name: string = "Bellamy";
 
-    public effect: string = "[Trigger]: Play this card. ";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_076_61 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

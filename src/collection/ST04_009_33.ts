@@ -6,7 +6,7 @@ export default class ST04_009_33 extends Card {
     
     public static _name: string = "Ginrummy";
 
-    public effect: string = "[On Play] You may trash one card from your hand: Reveal one DON!! from your DON!! deck in Active.";
+    public effect: string = "";
     
     public source: string = "Animal Kingdom Pirates [ST-04]";
     
@@ -20,7 +20,7 @@ export default class ST04_009_33 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

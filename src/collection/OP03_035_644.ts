@@ -6,7 +6,7 @@ export default class OP03_035_644 extends Card {
     
     public static _name: string = "Momoo";
 
-    public effect: string = "[Trigger] If your Leader has the {East Blue} type, play this card.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_035_644 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

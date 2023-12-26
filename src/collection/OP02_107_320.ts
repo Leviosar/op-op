@@ -6,7 +6,7 @@ export default class OP02_107_320 extends Card {
     
     public static _name: string = "Doberman";
 
-    public effect: string = "[On Play] Play up to 1 Character card with the {Jailer Beast} type from your hand.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_107_320 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

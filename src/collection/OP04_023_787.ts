@@ -6,7 +6,7 @@ export default class OP04_023_787 extends Card {
     
     public static _name: string = "Kuro";
 
-    public effect: string = "[Opponent's Turn] [Once Per Turn] When your opponent plays a Character card, if your Leader has the {Donquixote Pirates} type, rest up to 1 of your opponent's Characters. Then, rest this card.\r\n[On Play] Rest up to 1 of your opponent's Characters with a cost of 4 or less.";
+    public effect: string = "";
     
     public source: string = "Kingdoms of Intrigue [OP-04]";
     
@@ -20,7 +20,7 @@ export default class OP04_023_787 extends Card {
     
     public static power: number = 8000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

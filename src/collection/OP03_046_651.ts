@@ -6,7 +6,7 @@ export default class OP03_046_651 extends Card {
     
     public static _name: string = "Genzo";
 
-    public effect: string = "<Blocker>\r\n[Opponent's Turn] If your deck has 20 or less cards, this Character gains +3000 Power.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -16,11 +16,11 @@ export default class OP03_046_651 extends Card {
     
     public static cost: string = "2";
     
-    public static keywords: string[] = ["Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

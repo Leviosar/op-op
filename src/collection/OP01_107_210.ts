@@ -6,7 +6,7 @@ export default class OP01_107_210 extends Card {
     
     public static _name: string = "Babanuki";
 
-    public effect: string = "[On Play] Choose 2 cards from your opponent's hand; your opponent reveals those cards.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_107_210 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

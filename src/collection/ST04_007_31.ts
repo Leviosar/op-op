@@ -6,7 +6,7 @@ export default class ST04_007_31 extends Card {
     
     public static _name: string = "Sheepshead ";
 
-    public effect: string = "[On Play] [Don!! -1] You can draw 1 card.";
+    public effect: string = "";
     
     public source: string = "Animal Kingdom Pirates [ST-04]";
     
@@ -20,7 +20,7 @@ export default class ST04_007_31 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

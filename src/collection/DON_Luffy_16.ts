@@ -6,7 +6,7 @@ export default class DON_Luffy_16 extends Card {
     
     public static _name: string = "Your Turn +1000";
 
-    public effect: string = "Your Turn +1000";
+    public effect: string = "";
     
     public source: string = "Misc [MISC]";
     

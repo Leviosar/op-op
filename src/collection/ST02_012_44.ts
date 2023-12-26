@@ -6,7 +6,7 @@ export default class ST02_012_44 extends Card {
     
     public static _name: string = "Bepo";
 
-    public effect: string = "[On Play] Set one of your rested Characters with the Supernovas or Heart Pirates trait with a cost of 5 or less to active";
+    public effect: string = "";
     
     public source: string = "Worst Generation [ST-02]";
     
@@ -20,7 +20,7 @@ export default class ST02_012_44 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

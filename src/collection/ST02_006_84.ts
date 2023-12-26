@@ -6,7 +6,7 @@ export default class ST02_006_84 extends Card {
     
     public static _name: string = "Koby";
 
-    public effect: string = "[DON!!x1] [During your Turn] While this character is rested, +1000 Power for all your Marines and Supernova Characters and Leader.\r\n[Counter +1000]";
+    public effect: string = "";
     
     public source: string = "Worst Generation [ST-02]";
     
@@ -20,7 +20,7 @@ export default class ST02_006_84 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

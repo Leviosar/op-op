@@ -6,7 +6,7 @@ export default class P_022_719 extends Card {
     
     public static _name: string = "Monkey D. Luffy";
 
-    public effect: string = "[When Attacking] You may add the top or bottom card of your Life area to your hand: Up to 1 of this Character and your Leader gains +1000 power for this turn.";
+    public effect: string = "";
     
     public source: string = "Promo [P]";
     
@@ -20,7 +20,7 @@ export default class P_022_719 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

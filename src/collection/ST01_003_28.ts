@@ -6,7 +6,7 @@ export default class ST01_003_28 extends Card {
     
     public static _name: string = "Carue";
 
-    public effect: string = "[Main] Choose one of your Leader or Characters with the {Straw Hat Crew} trait: During this turn,  your opponent cannot activate <Blocker> when that Leader or Character attacks.\r\n[Trigger] K.O. 1 of your opponent's Characters with a Cost of 3 or less with <Blocker>.";
+    public effect: string = "";
     
     public source: string = "Straw Hat Crew [ST-01]";
     
@@ -16,11 +16,11 @@ export default class ST01_003_28 extends Card {
     
     public static cost: string = "1";
     
-    public static keywords: string[] = ["Blocker> when that Leader or Character attacks.\r\n[Trigger] K.O. 1 of your opponent's Characters with a Cost of 3 or less with <Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

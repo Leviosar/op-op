@@ -20,7 +20,7 @@ export default class ST05_014_233 extends Card {
     
     public static power: number = 0;
 
-    public static counter: number = 0;
+    public static counter: number = 2000;
     
     public static life: number = 0;
     

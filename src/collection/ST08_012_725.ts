@@ -6,7 +6,7 @@ export default class ST08_012_725 extends Card {
     
     public static _name: string = "Laboon";
 
-    public effect: string = "<Blocker> (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\r\n\r\n[Trigger] Play this card.";
+    public effect: string = "";
     
     public source: string = "Side - Monkey D. Luffy [ST-08]";
     
@@ -16,11 +16,11 @@ export default class ST08_012_725 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

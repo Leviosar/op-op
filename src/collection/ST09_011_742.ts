@@ -6,7 +6,7 @@ export default class ST09_011_742 extends Card {
     
     public static _name: string = "Monkey D Luffy";
 
-    public effect: string = "[When Attacking] You may add the top or bottom card of your Life area to your hand: This Character gains +2000 power until the start of your next turn.";
+    public effect: string = "";
     
     public source: string = "Side - Yamato [ST-09]";
     
@@ -20,7 +20,7 @@ export default class ST09_011_742 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

@@ -6,7 +6,7 @@ export default class OP03_006_623 extends Card {
     
     public static _name: string = "Speed Jil";
 
-    public effect: string = "This Character cannot attack the Leader on the turn in which it is played.\r\n[DON!! x1] This character gains <Rush>";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -16,11 +16,11 @@ export default class OP03_006_623 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Rush"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

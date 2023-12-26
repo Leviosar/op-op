@@ -6,7 +6,7 @@ export default class OP02_097_496 extends Card {
     
     public static _name: string = "Komille";
 
-    public effect: string = "If there is a Character with a cost of 0, this Character gains [Banish].";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_097_496 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

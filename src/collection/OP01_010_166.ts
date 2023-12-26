@@ -6,7 +6,7 @@ export default class OP01_010_166 extends Card {
     
     public static _name: string = "Komachiyo";
 
-    public effect: string = "[On K.O.] K.O. up to one of your opponent's Characters with 4000 power or less.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_010_166 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

@@ -6,7 +6,7 @@ export default class OP01_018_168 extends Card {
     
     public static _name: string = "Hajrudin";
 
-    public effect: string = "[On Play] You may place 1 card from your hand at the bottom of your deck: Draw 1 card.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_018_168 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

@@ -6,7 +6,7 @@ export default class OP02_109_503 extends Card {
     
     public static _name: string = "Jaguar.D.Saul";
 
-    public effect: string = "[On Play] Give up to 1 of your opponent's Characters −2 cost during this turn.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_109_503 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

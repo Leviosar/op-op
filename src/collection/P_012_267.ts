@@ -6,7 +6,7 @@ export default class P_012_267 extends Card {
     
     public static _name: string = "Jellyfish Pirates";
 
-    public effect: string = "[Activate: Main] [Once per turn] (1) (You may rest the designated number for DON!! in your Cost Area): Up to 1 of your Characters without effects gain +2000 Power during this turn.";
+    public effect: string = "";
     
     public source: string = "Promo [P]";
     
@@ -20,7 +20,7 @@ export default class P_012_267 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

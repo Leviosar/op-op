@@ -83,8 +83,11 @@ for card in cards:
         keywords = re.findall(r"(?<=\<).*(?=\>)", effect)
         keywords = [f"\"{k}\"" for k in keywords]
         keywords = ",".join(keywords)
-        counter = re.search(r"(?<=\[Counter\+).*(?=\])", effect)
-    
+    else:
+        effect = ""
+        keywords = ""
+
+    counter = card["counter_power"]
     name = card["name"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
     
     types = {
@@ -108,7 +111,7 @@ for card in cards:
         card["cost"],
         keywords,
         int(card["power"]) if card["power"] is not None else 0,
-        int(counter.group()) if counter is not None else 0,
+        int(counter) if counter is not None else 0,
         int(card["life"]) if card["life"] is not None else 0,
         id_,
         id_,

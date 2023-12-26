@@ -6,7 +6,7 @@ export default class OP03_106_693 extends Card {
     
     public static _name: string = "Charlotte Opera";
 
-    public effect: string = "[DON!! x1] [When Attacking] You may discard 1 card with [Trigger] from your hand: This Character gains +3000 power during this battle.";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_106_693 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

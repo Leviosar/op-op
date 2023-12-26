@@ -6,7 +6,7 @@ export default class ST07_002_591 extends Card {
     
     public static _name: string = "Charlotte Anana";
 
-    public effect: string = "[Counter] Look at up to 1 Life card from the top of your or your opponent's Life Area and put it either on the top or the bottom of the Life Area. Then, up to 1 of your Leader or Characters gains +2000 Power for this battle.\r\n\r\n[Trigger] Draw 1 card. Look at up to 1 Life card from the top of your or your opponent's Life Area and put it either on the top or the bottom of the Life Area.";
+    public effect: string = "";
     
     public source: string = "Big Mom Pirates [ST-07]";
     

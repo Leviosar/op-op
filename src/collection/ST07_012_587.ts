@@ -6,7 +6,7 @@ export default class ST07_012_587 extends Card {
     
     public static _name: string = "Baron Tamago";
 
-    public effect: string = "[Activate:Main] You may rest this card: Up to 1 of your [Charlotte Linlin] gain <Double Attack> during this turn.\r\n[Trigger] Play this card";
+    public effect: string = "";
     
     public source: string = "Big Mom Pirates [ST-07]";
     
@@ -16,11 +16,11 @@ export default class ST07_012_587 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Double Attack"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

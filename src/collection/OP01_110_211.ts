@@ -6,7 +6,7 @@ export default class OP01_110_211 extends Card {
     
     public static _name: string = "Fukurokuju";
 
-    public effect: string = "[On Play] Choose 2 cards from your opponent's hand; your opponent reveals those cards.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_110_211 extends Card {
     
     public static power: number = 8000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

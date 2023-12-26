@@ -6,7 +6,7 @@ export default class OP02_053_468 extends Card {
     
     public static _name: string = "Crocodile";
 
-    public effect: string = "[On Play] If you have [Mohji], draw 2 cards and trash 1 card from your hand.";
+    public effect: string = "";
     
     public source: string = "Paramount War [OP-02]";
     
@@ -20,7 +20,7 @@ export default class OP02_053_468 extends Card {
     
     public static power: number = 7000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

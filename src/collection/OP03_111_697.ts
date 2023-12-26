@@ -6,7 +6,7 @@ export default class OP03_111_697 extends Card {
     
     public static _name: string = "Charlotte Praline";
 
-    public effect: string = "[When Attacking] You may add 1 card from the top or bottom of your life to your hand: This Character gains +2000 power during this battle.\r\n[Trigger] You may discard 1 card from your hand: Play this card";
+    public effect: string = "";
     
     public source: string = "Pillars of Strength [OP-03]";
     
@@ -20,7 +20,7 @@ export default class OP03_111_697 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

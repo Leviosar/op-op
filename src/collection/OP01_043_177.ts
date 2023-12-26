@@ -6,7 +6,7 @@ export default class OP01_043_177 extends Card {
     
     public static _name: string = "Shinobu";
 
-    public effect: string = "[On Play] (3) (You may rest the specified number of DON!! cards in your cost area.): If your Leader is [Kozuki Oden], set 1 of your {Wano Country} type Character cards with a cost of 3 or less as active.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_043_177 extends Card {
     
     public static power: number = 5000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

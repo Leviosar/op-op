@@ -6,7 +6,7 @@ export default class ST06_003_295 extends Card {
     
     public static _name: string = "Django";
 
-    public effect: string = "[On Play] Give up to 1 of your opponent's Characters -1 cost during this turn.\r\n[Activate: Main] You may rest this Stage: If your Leader has the {Navy} type, give up to 1 of your opponent's Characters -1 to their cost during this turn.";
+    public effect: string = "";
     
     public source: string = "Navy [ST-06]";
     
@@ -20,7 +20,7 @@ export default class ST06_003_295 extends Card {
     
     public static power: number = 3000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

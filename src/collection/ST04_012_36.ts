@@ -6,7 +6,7 @@ export default class ST04_012_36 extends Card {
     
     public static _name: string = "Page One";
 
-    public effect: string = "<Blocker>";
+    public effect: string = "";
     
     public source: string = "Animal Kingdom Pirates [ST-04]";
     
@@ -16,11 +16,11 @@ export default class ST04_012_36 extends Card {
     
     public static cost: string = "4";
     
-    public static keywords: string[] = ["Blocker"];
+    public static keywords: string[] = [];
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

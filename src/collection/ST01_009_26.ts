@@ -6,7 +6,7 @@ export default class ST01_009_26 extends Card {
     
     public static _name: string = "Nefertari Vivi";
 
-    public effect: string = "[Activate: Main][Once Per Turn] Give your Leader or 1 of your Characters 1 rested DON!! card.";
+    public effect: string = "";
     
     public source: string = "Straw Hat Crew [ST-01]";
     
@@ -20,7 +20,7 @@ export default class ST01_009_26 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

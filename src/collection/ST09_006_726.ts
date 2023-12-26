@@ -6,7 +6,7 @@ export default class ST09_006_726 extends Card {
     
     public static _name: string = "Kozuki Momonosuke";
 
-    public effect: string = "[DON!! x1][Opponent's Turn] While your Life area has 2 cards or less, this Leader gains +1000 power.";
+    public effect: string = "";
     
     public source: string = "Side - Yamato [ST-09]";
     
@@ -20,7 +20,7 @@ export default class ST09_006_726 extends Card {
     
     public static power: number = 4000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     

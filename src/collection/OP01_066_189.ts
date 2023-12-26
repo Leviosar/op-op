@@ -6,7 +6,7 @@ export default class OP01_066_189 extends Card {
     
     public static _name: string = "Krieg";
 
-    public effect: string = "[DON!!x1] [Activate: Main] You may rest this Character: Pick 1 card from your opponent's hand and reveal it. If the revealed card is an Event card, place up to 1 of their Life cards on the bottom of the owner's deck.";
+    public effect: string = "";
     
     public source: string = "Romance Dawn [OP-01]";
     
@@ -20,7 +20,7 @@ export default class OP01_066_189 extends Card {
     
     public static power: number = 6000;
 
-    public static counter: number = 0;
+    public static counter: number = 1000;
     
     public static life: number = 0;
     
