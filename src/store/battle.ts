@@ -8,6 +8,7 @@ interface BattleState {
     attacker_: Card | null;
     blocker_: Card | null;
     target_: Card | null;
+    counters_: Card[];
 }
 
 export const battle = defineStore('battle', {
@@ -17,11 +18,16 @@ export const battle = defineStore('battle', {
         attacker_: null,
         blocker_: null,
         target_: null,
+        counters_: [],
     }),
     actions: {
         reset() {
             this.started = false;
             this.step = "targeting";
+            this.attacker_ = null;
+            this.target_ = null;
+            this.blocker_ = null;
+            this.counters_ = [];
         },
         async start(attacker: Card) {
             this.started = true;
@@ -41,18 +47,21 @@ export const battle = defineStore('battle', {
             }
             
             this.step = "countering";
+            this.target_?.getOwner()!.promptToCounter();
         },
         async counter(counters: Card[]) {
             for (const counter of counters) {
-                // apply counters
-                console.log(counter)
+                this.counters_.push(counter);
+                counter.getOwner()!.trash.push(counter)
+                counter.getOwner()!.hand = counter.getOwner()!.hand.filter((c) => c.uuid !== counter.uuid);
             }
 
-            this.step = "damage";
+            this.target_?.getOwner()!.promptToCounter();
         },
         async damage() {
             const attacker = this.attacker_;
             const target = this.target_;
+            const blocker = this.blocker_;
 
             if (attacker === null || target === null) return;
 
@@ -62,13 +71,15 @@ export const battle = defineStore('battle', {
             // Formula should be attack + (DON!! * 1000) + temporary_effects
             const attackerPower = attacker.getPower() + (attacker.attached.filter(c => c.getType() === 'don').length * 1000)
 
-            // if (block.response) {
-            //     const blockerPower = block.blocker!.getPower() + (block.blocker!.attached.filter(c => c.getType() === 'don').length * 1000)
-            //     result = attackerPower >= blockerPower
-            // } else {
+            const counters = this.counters_.reduce((acc, card) => acc + card.getCounter(), 0);
+
+            if (blocker !== null) {
+                const blockerPower = blocker.getPower() + (blocker.attached.filter(c => c.getType() === 'don').length * 1000)
+                result = attackerPower >= (blockerPower + counters)
+            } else {
                 const targetPower = target.getPower() + (target.attached.filter(c => c.getType() === 'don').length * 1000)
-                result = attackerPower >= targetPower
-            // }
+                result = attackerPower >= (targetPower + counters)
+            }
 
             // Nothings happens, feijoada.
             if (!result) {

@@ -72,6 +72,9 @@ export default defineComponent({
         case "selecting-blocker":
           battle().blocker(this.card);
         break;
+        case "selecting-counters":
+          battle().counter([this.card]);
+        break;
         default:
           break;
       }
@@ -93,7 +96,7 @@ export default defineComponent({
         case "selecting-blocker":
           return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
         case "selecting-counters":
-          return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
+          return this.card.getCounter() > 0 && this.card.location === "hand";   
         default:
           break;
       }

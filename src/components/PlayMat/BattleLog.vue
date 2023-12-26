@@ -9,9 +9,6 @@ import { defineComponent } from 'vue';
 import { log } from '../../store/log';
 
 export default defineComponent({
-  data() {
-
-  },
   methods: {
 
   },

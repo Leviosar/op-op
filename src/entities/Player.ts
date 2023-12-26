@@ -1,6 +1,6 @@
 import Card from "./Card";
 import Deck from "./Deck";
-import CounterOption from "./CounterOption";
+
 import { log } from "../store/log";
 import { dialog } from "../store/dialog";
 import { battle } from "../store/battle";
@@ -84,6 +84,9 @@ export default class Player {
             log().add(`Player ${this.id} doesn't have any available blocker`)
             
             battle().blocker(null);
+            battle().step = "countering";
+            this.promptToCounter();
+            return;
         }
 
         const response = await dialog().open({
@@ -91,27 +94,39 @@ export default class Player {
             text: "You may choose a blocker or take the hit"
         })
 
-        if (!response) battle().blocker(null);
+        if (!response) {
+            battle().blocker(null);
+            battle().step = "countering";
+            this.promptToCounter();
+            return;
+        };
 
         battle().step = "selecting-blocker";
     }
 
-    public async promptToCounter(): Promise<CounterOption> {
-        const availableCounters = this.hand.filter((c) => c.getKeywords().includes("Counter"))
+    public async promptToCounter() {
+        const availableCounters = this.hand.filter((c) => c.getCounter() > 0)
 
         if (availableCounters.length === 0) {
             log().add(`Player ${this.id} doesn't have any available counter`)
             
-            return {
-                response: false,
-                counters: [],
-            } as CounterOption
+            battle().step = "damage";
+            battle().damage();
+            return;
         }
 
-        return {
-            response: true,
-            counters: [],
-        }
+        const response = await dialog().open({
+            title: "Your opponent declared an attack",
+            text: "You may choose any number of counters or take the hit"
+        })
+
+        if (!response) {
+            battle().step = "damage";
+            battle().damage();
+            return;
+        };
+
+        battle().step = "selecting-counters";
     }
 
 }
