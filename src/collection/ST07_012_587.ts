@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST07_012_587 extends Card {
     public static id: string = "ST07_012_587";
     
-    public static _name: string = "Prometheus";
+    public static _name: string = "Baron Tamago";
 
     public effect: string = "[Activate:Main] You may rest this card: Up to 1 of your [Charlotte Linlin] gain <Double Attack> during this turn.\r\n[Trigger] Play this card";
     

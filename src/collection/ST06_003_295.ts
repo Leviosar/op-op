@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST06_003_295 extends Card {
     public static id: string = "ST06_003_295";
     
-    public static _name: string = "Marineford";
+    public static _name: string = "Django";
 
     public effect: string = "[On Play] Give up to 1 of your opponent's Characters -1 cost during this turn.\r\n[Activate: Main] You may rest this Stage: If your Leader has the {Navy} type, give up to 1 of your opponent's Characters -1 to their cost during this turn.";
     

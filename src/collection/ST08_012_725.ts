@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST08_012_725 extends Card {
     public static id: string = "ST08_012_725";
     
-    public static _name: string = "Nefertari Vivi";
+    public static _name: string = "Laboon";
 
     public effect: string = "<Blocker> (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)\r\n\r\n[Trigger] Play this card.";
     

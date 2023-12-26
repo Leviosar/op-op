@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_020_451 extends Card {
     public static id: string = "OP02_020_451";
     
-    public static _name: string = "Rakuyo";
+    public static _name: string = "Little Oars Jr.";
 
     public effect: string = "[DON!! x1] [Your Turn] All of your Characters with a type including \"Whitebeard Pirates\" gain +1000 power.";
     

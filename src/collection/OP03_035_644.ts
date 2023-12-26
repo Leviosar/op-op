@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_035_644 extends Card {
     public static id: string = "OP03_035_644";
     
-    public static _name: string = "Hatchan";
+    public static _name: string = "Momoo";
 
     public effect: string = "[Trigger] If your Leader has the {East Blue} type, play this card.";
     

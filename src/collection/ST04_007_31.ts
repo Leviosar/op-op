@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST04_007_31 extends Card {
     public static id: string = "ST04_007_31";
     
-    public static _name: string = "Sasaki";
+    public static _name: string = "Sheepshead ";
 
     public effect: string = "[On Play] [Don!! -1] You can draw 1 card.";
     

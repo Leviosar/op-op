@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST09_003_744 extends Card {
     public static id: string = "ST09_003_744";
     
-    public static _name: string = "Uzuki Tempura";
+    public static _name: string = "Ulti";
 
     public effect: string = "[Trigger] Rest up to 1 of your opponent's Characters with a cost of 2 or less, and add this card to your hand.";
     

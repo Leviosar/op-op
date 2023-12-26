@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_045_64 extends Card {
     public static id: string = "OP01_045_64";
     
-    public static _name: string = "Perona";
+    public static _name: string = "Jean Bart";
 
     public effect: string = "[On Play] Look at the top 5 cards of your deck, rearrange them in any order, then return them to the top or bottom of the deck.";
     

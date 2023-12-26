@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_116_507 extends Card {
     public static id: string = "OP02_116_507";
     
-    public static _name: string = "Monkey.D.Garp";
+    public static _name: string = "Yamakaji";
 
     public effect: string = "[DON!! x2] [When Attacking] K.O. up to 1 of your opponent's Characters with a cost of 0.";
     

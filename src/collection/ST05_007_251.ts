@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST05_007_251 extends Card {
     public static id: string = "ST05_007_251";
     
-    public static _name: string = "Lion's Threat: Imperial Earth Bind";
+    public static _name: string = "Gordon";
 
     public effect: string = "[Main] DON!! -2: K.O. up to 1 of your opponent's cost 5 or lower Characters.\r\n[Trigger] Add 1 card from your DON!! deck and set it as active.";
     

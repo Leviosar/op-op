@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_039_461 extends Card {
     public static id: string = "OP02_039_461";
     
-    public static _name: string = "Nekomamushi";
+    public static _name: string = "Franky";
 
     public effect: string = "<Blocker> (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)";
     

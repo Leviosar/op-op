@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_109_503 extends Card {
     public static id: string = "OP02_109_503";
     
-    public static _name: string = "Tsuru";
+    public static _name: string = "Jaguar.D.Saul";
 
     public effect: string = "[On Play] Give up to 1 of your opponent's Characters −2 cost during this turn.";
     

@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class P_016_272 extends Card {
     public static id: string = "P_016_272";
     
-    public static _name: string = "Helmeppo";
+    public static _name: string = "Shanks";
 
     public effect: string = "[On Play] Your Leader or up to 1 of your Characters gains +1000 Power during this turn.";
     

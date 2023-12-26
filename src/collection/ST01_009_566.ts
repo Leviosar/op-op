@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST01_009_566 extends Card {
     public static id: string = "ST01_009_566";
     
-    public static _name: string = "Sanji";
+    public static _name: string = "Nefertari Vivi";
 
     public effect: string = "[DON!! x1] [Your Turn] While your Life area has 2 or less cards, this Character gains +2000 power.";
     

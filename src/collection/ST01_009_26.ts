@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST01_009_26 extends Card {
     public static id: string = "ST01_009_26";
     
-    public static _name: string = "Nami";
+    public static _name: string = "Nefertari Vivi";
 
     public effect: string = "[Activate: Main][Once Per Turn] Give your Leader or 1 of your Characters 1 rested DON!! card.";
     

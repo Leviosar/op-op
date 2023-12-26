@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP04_087_779 extends Card {
     public static id: string = "OP04_087_779";
     
-    public static _name: string = "Cavendish";
+    public static _name: string = "Trafalgar Law";
 
     public effect: string = "[DON!! x1] This Character can attack active Characters. \r\n[When Attacking] You may rest your Leader: K.O. up to 1 of your opponent's Characters that cost 1 or less. Then, trash 2 cards form the top of your deck.";
     

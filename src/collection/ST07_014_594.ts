@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST07_014_594 extends Card {
     public static id: string = "ST07_014_594";
     
-    public static _name: string = "Charlotte Snack";
+    public static _name: string = "Pekoms";
 
     public effect: string = "[DON!!x1] [When Attacking] You may add the top or bottom card of your Life area to your hand: This Character gains <Banish> and 1000 power for this battle.";
     

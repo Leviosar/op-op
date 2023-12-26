@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_066_189 extends Card {
     public static id: string = "OP01_066_189";
     
-    public static _name: string = "Arlong";
+    public static _name: string = "Krieg";
 
     public effect: string = "[DON!!x1] [Activate: Main] You may rest this Character: Pick 1 card from your opponent's hand and reveal it. If the revealed card is an Event card, place up to 1 of their Life cards on the bottom of the owner's deck.";
     

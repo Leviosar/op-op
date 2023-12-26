@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_081_160 extends Card {
     public static id: string = "OP01_081_160";
     
-    public static _name: string = "Sasaki";
+    public static _name: string = "Mocha";
 
     public effect: string = "[DON!! x1] [When Attacking] You may trash 1 card from your hand: Add 1 card from your DON!! deck and rest it.";
     

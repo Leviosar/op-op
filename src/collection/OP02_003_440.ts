@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_003_440 extends Card {
     public static id: string = "OP02_003_440";
     
-    public static _name: string = "Donquixote Doflamingo";
+    public static _name: string = "Atmos";
 
     public effect: string = "[On Play] Look at 3 cards from the top of your deck and return them to the top or bottom of the deck in any order.\r\n[DON!! x1] [When Attacking] Trash 1 card from your hand: Place up to 1 of your opponent's cost 1 or lower Characters to the bottom of the deck.";
     

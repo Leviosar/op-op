@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST02_012_44 extends Card {
     public static id: string = "ST02_012_44";
     
-    public static _name: string = "Trafalgar Law";
+    public static _name: string = "Bepo";
 
     public effect: string = "[On Play] Set one of your rested Characters with the Supernovas or Heart Pirates trait with a cost of 5 or less to active";
     

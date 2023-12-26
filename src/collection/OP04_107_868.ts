@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP04_107_868 extends Card {
     public static id: string = "OP04_107_868";
     
-    public static _name: string = "Charlotte Amande";
+    public static _name: string = "Charlotte Perospero";
 
     public effect: string = "[Activate: Main] [Once Per Turn] You may trash 1 card with a [Trigger] from your hand: Rest up to 1 of your opponent's Characters with a cost of 2 or less.";
     

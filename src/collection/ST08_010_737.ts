@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST08_010_737 extends Card {
     public static id: string = "ST08_010_737";
     
-    public static _name: string = "Makino";
+    public static _name: string = "Monkey D Garp";
 
     public effect: string = "[On Play] If there is a Character with a Cost of 0 in play, draw 1 card.";
     

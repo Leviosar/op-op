@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_043_177 extends Card {
     public static id: string = "OP01_043_177";
     
-    public static _name: string = "Komurasaki";
+    public static _name: string = "Shinobu";
 
     public effect: string = "[On Play] (3) (You may rest the specified number of DON!! cards in your cost area.): If your Leader is [Kozuki Oden], set 1 of your {Wano Country} type Character cards with a cost of 3 or less as active.";
     

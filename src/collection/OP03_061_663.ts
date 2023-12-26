@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_061_663 extends Card {
     public static id: string = "OP03_061_663";
     
-    public static _name: string = "Kalifa";
+    public static _name: string = "Kiwi & Mozu";
 
     public effect: string = "[When Attacking] DON!! -1: Draw 2 cards, then discard 1 card from hand.";
     

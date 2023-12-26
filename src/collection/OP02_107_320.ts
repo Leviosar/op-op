@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_107_320 extends Card {
     public static id: string = "OP02_107_320";
     
-    public static _name: string = "Sadi";
+    public static _name: string = "Doberman";
 
     public effect: string = "[On Play] Play up to 1 Character card with the {Jailer Beast} type from your hand.";
     

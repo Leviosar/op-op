@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_007_624 extends Card {
     public static id: string = "OP03_007_624";
     
-    public static _name: string = "Curiel";
+    public static _name: string = "Namule";
 
     public effect: string = "This Character cannot attack the Leader on the turn in which it is played.\r\n[DON!! x1] This character gains <Rush>";
     

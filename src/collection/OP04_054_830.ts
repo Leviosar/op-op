@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP04_054_830 extends Card {
     public static id: string = "OP04_054_830";
     
-    public static _name: string = "Page One";
+    public static _name: string = "Rokki";
 
     public effect: string = "[DON!! x1] [Once Per Turn] When you activate an Event, draw 1 card. Then, place 1 card from your hand at the bottom of your deck.";
     

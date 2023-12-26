@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_106_693 extends Card {
     public static id: string = "OP03_106_693";
     
-    public static _name: string = "Charlotte Oven";
+    public static _name: string = "Charlotte Opera";
 
     public effect: string = "[DON!! x1] [When Attacking] You may discard 1 card with [Trigger] from your hand: This Character gains +3000 power during this battle.";
     

@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_060_472 extends Card {
     public static id: string = "OP02_060_472";
     
-    public static _name: string = "Bartholomew Kuma";
+    public static _name: string = "Mohji";
 
     public effect: string = "[On Play] Look at 2 cards from the top of your deck; reveal up to 1 {The Seven Warlords of the Sea} type card and add it to your hand. Then, place the rest at the top or bottom of the deck in any order.";
     

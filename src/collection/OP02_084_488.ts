@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_084_488 extends Card {
     public static id: string = "OP02_084_488";
     
-    public static _name: string = "Byrnndi World";
+    public static _name: string = "Blugori";
 
     public effect: string = "[Activate: Main] DON!! −8 (You may return the specified number of DON!! cards from your field to your DON!! deck.): This Character gains +792000 power during this turn.";
     

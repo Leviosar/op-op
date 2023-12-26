@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_006_623 extends Card {
     public static id: string = "OP03_006_623";
     
-    public static _name: string = "Curiel";
+    public static _name: string = "Speed Jil";
 
     public effect: string = "This Character cannot attack the Leader on the turn in which it is played.\r\n[DON!! x1] This character gains <Rush>";
     

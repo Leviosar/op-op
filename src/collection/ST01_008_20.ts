@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST01_008_20 extends Card {
     public static id: string = "ST01_008_20";
     
-    public static _name: string = "Thousand Sunny";
+    public static _name: string = "Nico Robin";
 
     public effect: string = "[Activate: Main] You may rest this Stage: 1 {Straw Hat Crew} type Leader or Character card on your field gains +1000 power during this turn.";
     

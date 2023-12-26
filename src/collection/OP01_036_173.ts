@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_036_173 extends Card {
     public static id: string = "OP01_036_173";
     
-    public static _name: string = "Izou";
+    public static _name: string = "Otsuru";
 
     public effect: string = "[On Play] Rest 1 of your opponent's Characters with a cost of 4 or less.";
     

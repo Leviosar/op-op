@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_065_162 extends Card {
     public static id: string = "OP01_065_162";
     
-    public static _name: string = "Smiley";
+    public static _name: string = "Vergo";
 
     public effect: string = "[DON!!x1] [Your Turn] For each card in your hand, +1000 power for this character.\r\n";
     

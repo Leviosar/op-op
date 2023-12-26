@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_103_102 extends Card {
     public static id: string = "OP01_103_102";
     
-    public static _name: string = "Hyogoro";
+    public static _name: string = "Scratchmen Apoo";
 
     public effect: string = "[Activate Main] You may rest this Character: Your Leader or 1 of your Character gains +2000 Power during this turn.";
     

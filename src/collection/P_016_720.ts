@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class P_016_720 extends Card {
     public static id: string = "P_016_720";
     
-    public static _name: string = "Monkey D. Luffy";
+    public static _name: string = "Shanks";
 
     public effect: string = "[When Attacking] You may add the top or bottom card of your Life area to your hand: Up to 1 of this Character and your Leader gains +1000 power for this turn.";
     

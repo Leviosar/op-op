@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_097_496 extends Card {
     public static id: string = "OP02_097_496";
     
-    public static _name: string = "Onigumo";
+    public static _name: string = "Komille";
 
     public effect: string = "If there is a Character with a cost of 0, this Character gains [Banish].";
     

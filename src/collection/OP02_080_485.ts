@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_080_485 extends Card {
     public static id: string = "OP02_080_485";
     
-    public static _name: string = "Douglas Bullet";
+    public static _name: string = "Dobon";
 
     public effect: string = "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Rest up to 1 of your opponent's Characters with a cost of 4 or less.";
     

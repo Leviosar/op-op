@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_085_675 extends Card {
     public static id: string = "OP03_085_675";
     
-    public static _name: string = "Corgi";
+    public static _name: string = "Jabra";
 
     public effect: string = "[On Play] Look at the top 5 cards of your deck, and place up to 2 of them in the trash. Then place the remaining cards on the bottom of your deck in any order.";
     

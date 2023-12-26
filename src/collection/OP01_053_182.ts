@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_053_182 extends Card {
     public static id: string = "OP01_053_182";
     
-    public static _name: string = "Uta";
+    public static _name: string = "Wire";
 
     public effect: string = "[On Play] Return up to one Red Character other than [Uta] that costs 3 or less from your trash and to your hand.";
     

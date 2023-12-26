@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_092_205 extends Card {
     public static id: string = "OP01_092_205";
     
-    public static _name: string = "King";
+    public static _name: string = "Urashima";
 
     public effect: string = "[Your Turn] If you have 10 DON!! cards on your field, give all of your opponent's Characters -1000 power.";
     

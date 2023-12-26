@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class P_012_267 extends Card {
     public static id: string = "P_012_267";
     
-    public static _name: string = "Uta";
+    public static _name: string = "Jellyfish Pirates";
 
     public effect: string = "[Activate: Main] [Once per turn] (1) (You may rest the designated number for DON!! in your Cost Area): Up to 1 of your Characters without effects gain +2000 Power during this turn.";
     

@@ -75,51 +75,54 @@ for card in cards:
     id_ = f"{card['cid'].replace('-', '_')}_{card['gid']}"
     file = Path(f"../collection/{id_}.ts")
     
-    if not file.is_file():
-        if card["effect"] is not None:
-            effect = card["effect"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
-            keywords = re.findall(r"(?<=\<).*(?=\>)", effect)
-            keywords = [f"\"{k}\"" for k in keywords]
-            keywords = ",".join(keywords)
-            counter = re.search(r"(?<=\[Counter\+).*(?=\])", effect)
-            name = card["name"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
-        
-        types = {
-            "1": "leader",
-            "2": "char",
-            "3": "event",
-            "4": "stage",
-            "5": "don"
-        }
-        
-        type_ = types[card["card_type"]]
-        
-        contents = stub % (
-            id_, 
-            id_, 
-            name, 
-            effect, 
-            card["source_name"], 
-            card["image_url"], 
-            type_,
-            card["cost"],
-            keywords,
-            int(card["power"]) if card["power"] is not None else 0,
-            int(counter.group()) if counter is not None else 0,
-            int(card["life"]) if card["life"] is not None else 0,
-            id_,
-            id_,
-            id_,
-            id_,
-            id_,
-            id_,
-            id_,
-            id_,
-            id_,
-        )
-        
-        with open(file, 'w', encoding="utf-8") as fp:
-            fp.write(contents)
+    if file.is_file():
+        continue
+    
+    if card["effect"] is not None:
+        effect = card["effect"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
+        keywords = re.findall(r"(?<=\<).*(?=\>)", effect)
+        keywords = [f"\"{k}\"" for k in keywords]
+        keywords = ",".join(keywords)
+        counter = re.search(r"(?<=\[Counter\+).*(?=\])", effect)
+    
+    name = card["name"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
+    
+    types = {
+        "1": "leader",
+        "2": "char",
+        "3": "event",
+        "4": "stage",
+        "5": "don"
+    }
+    
+    type_ = types[card["card_type"]]
+    
+    contents = stub % (
+        id_, 
+        id_, 
+        name, 
+        effect, 
+        card["source_name"], 
+        card["image_url"], 
+        type_,
+        card["cost"],
+        keywords,
+        int(card["power"]) if card["power"] is not None else 0,
+        int(counter.group()) if counter is not None else 0,
+        int(card["life"]) if card["life"] is not None else 0,
+        id_,
+        id_,
+        id_,
+        id_,
+        id_,
+        id_,
+        id_,
+        id_,
+        id_,
+    )
+    
+    with open(file, 'w', encoding="utf-8") as fp:
+        fp.write(contents)
 
 contents = ""
 

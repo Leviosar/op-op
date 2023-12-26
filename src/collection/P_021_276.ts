@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class P_021_276 extends Card {
     public static id: string = "P_021_276";
     
-    public static _name: string = "Bepo";
+    public static _name: string = "Ben Beckman";
 
     public effect: string = "[DON!! x1] [When attacking] K.O. up to 1 of your opponent's Characters with 3000 or less Power.";
     

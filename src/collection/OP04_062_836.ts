@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP04_062_836 extends Card {
     public static id: string = "OP04_062_836";
     
-    public static _name: string = "Tom";
+    public static _name: string = "Bananagator";
 
     public effect: string = "[Activate: Main] You may trash this Character: If your Leader has the {Water Seven} type, add up to 1 DON!! card from your DON!! deck and rest it.";
     

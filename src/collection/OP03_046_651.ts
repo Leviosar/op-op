@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_046_651 extends Card {
     public static id: string = "OP03_046_651";
     
-    public static _name: string = "Carne";
+    public static _name: string = "Genzo";
 
     public effect: string = "<Blocker>\r\n[Opponent's Turn] If your deck has 20 or less cards, this Character gains +3000 Power.";
     

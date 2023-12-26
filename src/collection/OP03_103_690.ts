@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_103_690 extends Card {
     public static id: string = "OP03_103_690";
     
-    public static _name: string = "Sanji";
+    public static _name: string = "Bobbin the Disposer";
 
     public effect: string = "[DON!! x2] [When Attacking] You may add the top or bottom card of your Life area to your hand: Add up to 1 card from the top of your deck to the top of your Life area. ";
     

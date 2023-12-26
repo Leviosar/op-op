@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST04_009_33 extends Card {
     public static id: string = "ST04_009_33";
     
-    public static _name: string = "Jack";
+    public static _name: string = "Ginrummy";
 
     public effect: string = "[On Play] You may trash one card from your hand: Reveal one DON!! from your DON!! deck in Active.";
     

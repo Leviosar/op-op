@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_077_482 extends Card {
     public static id: string = "OP02_077_482";
     
-    public static _name: string = "Shiryu";
+    public static _name: string = "Solitaire";
 
     public effect: string = "[On Play] DON!! −1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 1 or less.";
     

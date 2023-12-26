@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_028_456 extends Card {
     public static id: string = "OP02_028_456";
     
-    public static _name: string = "Moby Dick";
+    public static _name: string = "Usopp";
 
     public effect: string = "[Your Turn] If you have 1 or less Life cards, your [Edward.Newgate] and all your Characters with a type including \"Whitebeard Pirates\" gain +2000 power.\r\n[Trigger] Play this card.";
     

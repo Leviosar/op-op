@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST09_011_742 extends Card {
     public static id: string = "ST09_011_742";
     
-    public static _name: string = "Yamato";
+    public static _name: string = "Monkey D Luffy";
 
     public effect: string = "[When Attacking] You may add the top or bottom card of your Life area to your hand: This Character gains +2000 power until the start of your next turn.";
     

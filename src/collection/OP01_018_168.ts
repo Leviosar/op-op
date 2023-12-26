@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_018_168 extends Card {
     public static id: string = "OP01_018_168";
     
-    public static _name: string = "Gordon";
+    public static _name: string = "Hajrudin";
 
     public effect: string = "[On Play] You may place 1 card from your hand at the bottom of your deck: Draw 1 card.";
     

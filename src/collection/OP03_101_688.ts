@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_101_688 extends Card {
     public static id: string = "OP03_101_688";
     
-    public static _name: string = "King Baum";
+    public static _name: string = "Camie";
 
     public effect: string = "[Trigger] You may trash the top or bottom card of your Life: Play this card.";
     

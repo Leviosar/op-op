@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST05_012_253 extends Card {
     public static id: string = "ST05_012_253";
     
-    public static _name: string = "Scarlet";
+    public static _name: string = "Baccarat";
 
     public effect: string = "[Trigger] Play this card.";
     

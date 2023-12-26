@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_043_463 extends Card {
     public static id: string = "OP02_043_463";
     
-    public static _name: string = "Yamato";
+    public static _name: string = "Roronoa Zoro";
 
     public effect: string = "Also treat this card's name as [Kozuki Oden] according to the rules.\r\n[On Play] Rest up to 1 of your opponent's Characters with a cost of 6 or less.";
     

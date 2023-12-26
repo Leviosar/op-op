@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_088_490 extends Card {
     public static id: string = "OP02_088_490";
     
-    public static _name: string = "Minotaur";
+    public static _name: string = "Sphinx";
 
     public effect: string = "<Double Attack> (This card deals 2 damage.)\r\n[On K.O.] If your Leader has {{Impel Down}} as a type, add 1 DON!! card from your DON!! deck and rest it.";
     

@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST09_006_726 extends Card {
     public static id: string = "ST09_006_726";
     
-    public static _name: string = "Yamato";
+    public static _name: string = "Kozuki Momonosuke";
 
     public effect: string = "[DON!! x1][Opponent's Turn] While your Life area has 2 cards or less, this Leader gains +1000 power.";
     

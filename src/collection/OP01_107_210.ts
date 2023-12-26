@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_107_210 extends Card {
     public static id: string = "OP01_107_210";
     
-    public static _name: string = "Bao Huang";
+    public static _name: string = "Babanuki";
 
     public effect: string = "[On Play] Choose 2 cards from your opponent's hand; your opponent reveals those cards.";
     

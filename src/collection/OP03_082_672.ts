@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_082_672 extends Card {
     public static id: string = "OP03_082_672";
     
-    public static _name: string = "Issho";
+    public static _name: string = "Kumadori";
 
     public effect: string = "[DON!! x1] [Your Turn] Give all of your opponent's Characters -3 cost.\r\n[On Play] If your opponent has 6 or more cards in their hand, your opponent must trash 2 cards from their hand.";
     

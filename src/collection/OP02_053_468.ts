@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_053_468 extends Card {
     public static id: string = "OP02_053_468";
     
-    public static _name: string = "Cabaji";
+    public static _name: string = "Crocodile";
 
     public effect: string = "[On Play] If you have [Mohji], draw 2 cards and trash 1 card from your hand.";
     

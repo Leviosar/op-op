@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class ST09_013_750 extends Card {
     public static id: string = "ST09_013_750";
     
-    public static _name: string = "Portgas D. Ace";
+    public static _name: string = "Yamato";
 
     public effect: string = "[Once Per Turn] If this Character would be KO'ed, you can trash 1 card from the top or bottom of your Life Area instead.";
     

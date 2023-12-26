@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP02_033_458 extends Card {
     public static id: string = "OP02_033_458";
     
-    public static _name: string = "Shishilian";
+    public static _name: string = "Jinbe";
 
     public effect: string = "[On Play] (2) (You may rest the specified number of DON!! cards in your cost area.): Set up to 1 of your {Minks} type Characters with a cost of 5 or less as active.";
     

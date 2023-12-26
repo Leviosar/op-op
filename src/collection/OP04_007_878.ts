@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP04_007_878 extends Card {
     public static id: string = "OP04_007_878";
     
-    public static _name: string = "Donquixote Rosinante";
+    public static _name: string = "Sanji";
 
     public effect: string = "[Opponent's Turn] If this Character is rested, your active Characters with a base cost of 5 cannot be K.O.'d by effects.\r\n[On Play] You may rest this Character: Play up to 1 green Character card with a cost of 5 from your hand.";
     

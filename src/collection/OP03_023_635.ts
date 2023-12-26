@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP03_023_635 extends Card {
     public static id: string = "OP03_023_635";
     
-    public static _name: string = "Striker";
+    public static _name: string = "Alvida";
 
     public effect: string = "[Activate: Main] (2) You may rest this Stage: If your Leader is [Portgas D. Ace], look at the top 5 cards of your deck, reveal up to 1 Event card and add it to your hand. Then, place the rest of the cards at the bottom of your deck in any order.";
     

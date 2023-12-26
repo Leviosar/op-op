@@ -4,7 +4,7 @@ import Card, { CardType } from "../entities/Card";
 export default class OP01_010_166 extends Card {
     public static id: string = "OP01_010_166";
     
-    public static _name: string = "Caribou";
+    public static _name: string = "Komachiyo";
 
     public effect: string = "[On K.O.] K.O. up to one of your opponent's Characters with 4000 power or less.";
     
