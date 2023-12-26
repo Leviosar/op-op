@@ -18,6 +18,8 @@ export default class OP02_025_515 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Wano Country","Nine Red Scabbards"];
+    
     public static power: number = 5000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP02_025_515 extends Card {
     
     public getKeywords(): string[] {
         return OP02_025_515.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_025_515.archetypes;
     }
     
     public getPower(): number {

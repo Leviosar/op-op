@@ -18,6 +18,8 @@ export default class ST03_008_105 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["The Seven Warlords of the Sea","Heart Pirates"];
+    
     public static power: number = 1000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST03_008_105 extends Card {
     
     public getKeywords(): string[] {
         return ST03_008_105.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST03_008_105.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class OP02_063_474 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Impel Down","Former Baroque Works"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_063_474 extends Card {
     
     public getKeywords(): string[] {
         return OP02_063_474.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_063_474.archetypes;
     }
     
     public getPower(): number {

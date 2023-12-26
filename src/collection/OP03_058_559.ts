@@ -18,6 +18,8 @@ export default class OP03_058_559 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Water Seven","Galley-La Company"];
+    
     public static power: number = 5000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP03_058_559 extends Card {
     
     public getKeywords(): string[] {
         return OP03_058_559.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_058_559.archetypes;
     }
     
     public getPower(): number {

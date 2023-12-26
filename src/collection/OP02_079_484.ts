@@ -18,6 +18,8 @@ export default class OP02_079_484 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","The Pirates Fest"];
+    
     public static power: number = 6000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_079_484 extends Card {
     
     public getKeywords(): string[] {
         return OP02_079_484.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_079_484.archetypes;
     }
     
     public getPower(): number {

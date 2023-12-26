@@ -18,6 +18,8 @@ export default class OP04_044_823 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["The Four Emperors","Animal Kingdom Pirates"];
+    
     public static power: number = 12000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_044_823 extends Card {
     
     public getKeywords(): string[] {
         return OP04_044_823.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_044_823.archetypes;
     }
     
     public getPower(): number {

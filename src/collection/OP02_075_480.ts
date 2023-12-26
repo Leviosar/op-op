@@ -18,6 +18,8 @@ export default class OP02_075_480 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","Golden Lion Pirates"];
+    
     public static power: number = 3000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP02_075_480 extends Card {
     
     public getKeywords(): string[] {
         return OP02_075_480.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_075_480.archetypes;
     }
     
     public getPower(): number {

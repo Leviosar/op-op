@@ -18,6 +18,8 @@ export default class OP04_110_871 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Whole Cake Island"];
+    
     public static power: number = 3000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP04_110_871 extends Card {
     
     public getKeywords(): string[] {
         return OP04_110_871.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_110_871.archetypes;
     }
     
     public getPower(): number {

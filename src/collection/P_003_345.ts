@@ -18,6 +18,8 @@ export default class P_003_345 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static archetype: string[] = ["Supernovas","Kid Pirates"];
+    
     public static power: number = 4000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class P_003_345 extends Card {
     
     public getKeywords(): string[] {
         return P_003_345.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_003_345.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class OP01_033_286 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Wano Country","Former Whitebeard Pirates"];
+    
     public static power: number = 3000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP01_033_286 extends Card {
     
     public getKeywords(): string[] {
         return OP01_033_286.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_033_286.archetypes;
     }
     
     public getPower(): number {

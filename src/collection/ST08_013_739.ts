@@ -18,6 +18,8 @@ export default class ST08_013_739 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Former Baroque Works"];
+    
     public static power: number = 6000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST08_013_739 extends Card {
     
     public getKeywords(): string[] {
         return ST08_013_739.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST08_013_739.archetypes;
     }
     
     public getPower(): number {

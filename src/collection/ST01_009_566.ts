@@ -18,6 +18,8 @@ export default class ST01_009_566 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Alabasta"];
+    
     public static power: number = 4000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST01_009_566 extends Card {
     
     public getKeywords(): string[] {
         return ST01_009_566.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST01_009_566.archetypes;
     }
     
     public getPower(): number {

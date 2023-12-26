@@ -18,6 +18,8 @@ export default class OP02_031_520 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Wano Country","Kozuki Family"];
+    
     public static power: number = 0;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_031_520 extends Card {
     
     public getKeywords(): string[] {
         return OP02_031_520.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_031_520.archetypes;
     }
     
     public getPower(): number {

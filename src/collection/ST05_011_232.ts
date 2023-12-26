@@ -18,6 +18,8 @@ export default class ST05_011_232 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static archetype: string[] = ["FILM","Pirate Fest"];
+    
     public static power: number = 10000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST05_011_232 extends Card {
     
     public getKeywords(): string[] {
         return ST05_011_232.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST05_011_232.archetypes;
     }
     
     public getPower(): number {

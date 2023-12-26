@@ -18,6 +18,8 @@ export default class OP02_046_465 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","Straw Hat Crew"];
+    
     public static power: number = 0;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP02_046_465 extends Card {
     
     public getKeywords(): string[] {
         return OP02_046_465.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_046_465.archetypes;
     }
     
     public getPower(): number {

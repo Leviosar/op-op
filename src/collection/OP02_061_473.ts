@@ -18,6 +18,8 @@ export default class OP02_061_473 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Giant","Revolutionary Army"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_061_473 extends Card {
     
     public getKeywords(): string[] {
         return OP02_061_473.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_061_473.archetypes;
     }
     
     public getPower(): number {

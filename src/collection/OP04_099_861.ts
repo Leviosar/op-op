@@ -18,6 +18,8 @@ export default class OP04_099_861 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Land of Wano","The Four Emperors","Big Mom Pirates"];
+    
     public static power: number = 7000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_099_861 extends Card {
     
     public getKeywords(): string[] {
         return OP04_099_861.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_099_861.archetypes;
     }
     
     public getPower(): number {

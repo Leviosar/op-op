@@ -18,6 +18,8 @@ export default class OP01_117_215 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Animal Kingdom Pirates","SMILE"];
+    
     public static power: number = 0;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP01_117_215 extends Card {
     
     public getKeywords(): string[] {
         return OP01_117_215.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_117_215.archetypes;
     }
     
     public getPower(): number {

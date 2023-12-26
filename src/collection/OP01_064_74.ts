@@ -18,6 +18,8 @@ export default class OP01_064_74 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Buggy Pirates"];
+    
     public static power: number = 3000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP01_064_74 extends Card {
     
     public getKeywords(): string[] {
         return OP01_064_74.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_064_74.archetypes;
     }
     
     public getPower(): number {

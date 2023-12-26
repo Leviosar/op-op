@@ -18,6 +18,8 @@ export default class OP01_081_160 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Punk Hazard"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP01_081_160 extends Card {
     
     public getKeywords(): string[] {
         return OP01_081_160.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_081_160.archetypes;
     }
     
     public getPower(): number {

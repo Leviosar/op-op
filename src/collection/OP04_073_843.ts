@@ -18,6 +18,8 @@ export default class OP04_073_843 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Animal","Baroque Works"];
+    
     public static power: number = 1000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP04_073_843 extends Card {
     
     public getKeywords(): string[] {
         return OP04_073_843.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_073_843.archetypes;
     }
     
     public getPower(): number {

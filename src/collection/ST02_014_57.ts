@@ -18,6 +18,8 @@ export default class ST02_014_57 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Navy","Supernovas","Drake Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST02_014_57 extends Card {
     
     public getKeywords(): string[] {
         return ST02_014_57.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST02_014_57.archetypes;
     }
     
     public getPower(): number {

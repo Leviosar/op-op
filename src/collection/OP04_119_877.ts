@@ -18,6 +18,8 @@ export default class OP04_119_877 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Navy","Donquixote Pirates"];
+    
     public static power: number = 8000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_119_877 extends Card {
     
     public getKeywords(): string[] {
         return OP04_119_877.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_119_877.archetypes;
     }
     
     public getPower(): number {

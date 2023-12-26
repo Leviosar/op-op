@@ -18,6 +18,8 @@ export default class OP02_105_530 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Navy"];
+    
     public static power: number = 5000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP02_105_530 extends Card {
     
     public getKeywords(): string[] {
         return OP02_105_530.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_105_530.archetypes;
     }
     
     public getPower(): number {

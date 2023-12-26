@@ -18,6 +18,8 @@ export default class OP04_084_851 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["CP0"];
+    
     public static power: number = 3000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_084_851 extends Card {
     
     public getKeywords(): string[] {
         return OP04_084_851.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_084_851.archetypes;
     }
     
     public getPower(): number {

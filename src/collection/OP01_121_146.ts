@@ -18,6 +18,8 @@ export default class OP01_121_146 extends Card {
     
     public static keywords: string[] = ["Double Attack>\r\n<Banish"];
     
+    public static archetype: string[] = ["Wano Country"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP01_121_146 extends Card {
     
     public getKeywords(): string[] {
         return OP01_121_146.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_121_146.archetypes;
     }
     
     public getPower(): number {

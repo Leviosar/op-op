@@ -18,6 +18,8 @@ export default class ST09_010_749 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Land of Wano","Whitebeard Pirates"];
+    
     public static power: number = 7000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST09_010_749 extends Card {
     
     public getKeywords(): string[] {
         return ST09_010_749.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST09_010_749.archetypes;
     }
     
     public getPower(): number {

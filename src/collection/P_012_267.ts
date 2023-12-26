@@ -18,6 +18,8 @@ export default class P_012_267 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","Jellyfish Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class P_012_267 extends Card {
     
     public getKeywords(): string[] {
         return P_012_267.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_012_267.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class P_013_268 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM"];
+    
     public static power: number = 2000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class P_013_268 extends Card {
     
     public getKeywords(): string[] {
         return P_013_268.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_013_268.archetypes;
     }
     
     public getPower(): number {

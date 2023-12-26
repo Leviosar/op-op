@@ -18,6 +18,8 @@ export default class OP01_072_161 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Biological Weapon","Pink Hazard"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP01_072_161 extends Card {
     
     public getKeywords(): string[] {
         return OP01_072_161.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_072_161.archetypes;
     }
     
     public getPower(): number {

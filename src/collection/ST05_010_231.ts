@@ -18,6 +18,8 @@ export default class ST05_010_231 extends Card {
     
     public static keywords: string[] = ["Strike"];
     
+    public static archetype: string[] = ["FILM","Neo Navy"];
+    
     public static power: number = 8000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST05_010_231 extends Card {
     
     public getKeywords(): string[] {
         return ST05_010_231.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST05_010_231.archetypes;
     }
     
     public getPower(): number {

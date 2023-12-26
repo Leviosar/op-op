@@ -23,6 +23,8 @@ export default class %s extends Card {
     
     public static keywords: string[] = [%s];
     
+    public static archetype: string[] = [%s];
+    
     public static power: number = %s;
 
     public static counter: number = %s;
@@ -51,6 +53,10 @@ export default class %s extends Card {
     
     public getKeywords(): string[] {
         return %s.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return %s.archetypes;
     }
     
     public getPower(): number {
@@ -87,8 +93,13 @@ for card in cards:
         effect = ""
         keywords = ""
 
-    counter = card["counter_power"]
     name = card["name"].replace("\n", "\\n").replace("\r", "\\r").replace("\"", '\\"')
+    counter = card["counter_power"]
+    
+    if card["types"] is not None:
+        archetypes = ",".join([f"\"{a.strip()}\"" for a in card["types"].split('/')])
+    else:
+        archetypes = ""
     
     types = {
         "1": "leader",
@@ -110,9 +121,11 @@ for card in cards:
         type_,
         card["cost"],
         keywords,
+        archetypes,
         int(card["power"]) if card["power"] is not None else 0,
         int(counter) if counter is not None else 0,
         int(card["life"]) if card["life"] is not None else 0,
+        id_,
         id_,
         id_,
         id_,

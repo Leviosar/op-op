@@ -18,6 +18,8 @@ export default class OP02_015_447 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Windmill Village"];
+    
     public static power: number = 0;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP02_015_447 extends Card {
     
     public getKeywords(): string[] {
         return OP02_015_447.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_015_447.archetypes;
     }
     
     public getPower(): number {

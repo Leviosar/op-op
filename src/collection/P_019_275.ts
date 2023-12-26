@@ -18,6 +18,8 @@ export default class P_019_275 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","Mink Tribe","Heart Pirates"];
+    
     public static power: number = 2000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class P_019_275 extends Card {
     
     public getKeywords(): string[] {
         return P_019_275.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_019_275.archetypes;
     }
     
     public getPower(): number {

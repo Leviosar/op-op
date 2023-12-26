@@ -18,6 +18,8 @@ export default class ST07_007_544 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Big Mom Pirates"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST07_007_544 extends Card {
     
     public getKeywords(): string[] {
         return ST07_007_544.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST07_007_544.archetypes;
     }
     
     public getPower(): number {

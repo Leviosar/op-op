@@ -18,6 +18,8 @@ export default class OP03_044_607 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["East Blue"];
+    
     public static power: number = 0;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP03_044_607 extends Card {
     
     public getKeywords(): string[] {
         return OP03_044_607.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_044_607.archetypes;
     }
     
     public getPower(): number {

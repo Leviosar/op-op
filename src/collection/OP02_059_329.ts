@@ -18,6 +18,8 @@ export default class OP02_059_329 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Impel Down","The Seven Warlords of the Sea","Kuja"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_059_329 extends Card {
     
     public getKeywords(): string[] {
         return OP02_059_329.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_059_329.archetypes;
     }
     
     public getPower(): number {

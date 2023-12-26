@@ -18,6 +18,8 @@ export default class OP02_049_300 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Impel Down","Revolutionary Army"];
+    
     public static power: number = 5000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP02_049_300 extends Card {
     
     public getKeywords(): string[] {
         return OP02_049_300.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_049_300.archetypes;
     }
     
     public getPower(): number {

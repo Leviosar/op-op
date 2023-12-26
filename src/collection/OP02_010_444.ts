@@ -18,6 +18,8 @@ export default class OP02_010_444 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Mountain Bandits"];
+    
     public static power: number = 2000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_010_444 extends Card {
     
     public getKeywords(): string[] {
         return OP02_010_444.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_010_444.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class OP01_100_208 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Wano Country","Kurozumi Family"];
+    
     public static power: number = 3000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP01_100_208 extends Card {
     
     public getKeywords(): string[] {
         return OP01_100_208.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP01_100_208.archetypes;
     }
     
     public getPower(): number {

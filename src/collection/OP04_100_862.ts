@@ -18,6 +18,8 @@ export default class OP04_100_862 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Firetank Pirates"];
+    
     public static power: number = 3000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP04_100_862 extends Card {
     
     public getKeywords(): string[] {
         return OP04_100_862.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_100_862.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class ST01_012_8 extends Card {
     
     public static keywords: string[] = ["Rush>(This Character can attack the turn it enters play.)\r\n[DON!! x2][When Attacking] Your opponent's can't activate <Blocker"];
     
+    public static archetype: string[] = ["Supernovas","Straw Hat Crew"];
+    
     public static power: number = 6000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST01_012_8 extends Card {
     
     public getKeywords(): string[] {
         return ST01_012_8.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST01_012_8.archetypes;
     }
     
     public getPower(): number {

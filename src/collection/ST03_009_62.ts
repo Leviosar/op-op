@@ -18,6 +18,8 @@ export default class ST03_009_62 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["The Seven Warlords of the Sea","Donquixote Pirates"];
+    
     public static power: number = 7000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST03_009_62 extends Card {
     
     public getKeywords(): string[] {
         return ST03_009_62.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST03_009_62.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class OP02_029_311 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Mink Tribe"];
+    
     public static power: number = 5000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP02_029_311 extends Card {
     
     public getKeywords(): string[] {
         return OP02_029_311.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_029_311.archetypes;
     }
     
     public getPower(): number {

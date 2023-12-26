@@ -18,6 +18,8 @@ export default class OP03_007_624 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Fish-Man","Whitebeard Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP03_007_624 extends Card {
     
     public getKeywords(): string[] {
         return OP03_007_624.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_007_624.archetypes;
     }
     
     public getPower(): number {

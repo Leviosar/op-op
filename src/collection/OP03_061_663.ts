@@ -18,6 +18,8 @@ export default class OP03_061_663 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Water 7","Franky Family"];
+    
     public static power: number = 4000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP03_061_663 extends Card {
     
     public getKeywords(): string[] {
         return OP03_061_663.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_061_663.archetypes;
     }
     
     public getPower(): number {

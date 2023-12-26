@@ -18,6 +18,8 @@ export default class OP03_107_580 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Big Mom Pirates"];
+    
     public static power: number = 2000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP03_107_580 extends Card {
     
     public getKeywords(): string[] {
         return OP03_107_580.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_107_580.archetypes;
     }
     
     public getPower(): number {

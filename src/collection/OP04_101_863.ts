@@ -18,6 +18,8 @@ export default class OP04_101_863 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["The House of Lambs"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP04_101_863 extends Card {
     
     public getKeywords(): string[] {
         return OP04_101_863.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_101_863.archetypes;
     }
     
     public getPower(): number {

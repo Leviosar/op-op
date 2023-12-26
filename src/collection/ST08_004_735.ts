@@ -18,6 +18,8 @@ export default class ST08_004_735 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Navy"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST08_004_735 extends Card {
     
     public getKeywords(): string[] {
         return ST08_004_735.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST08_004_735.archetypes;
     }
     
     public getPower(): number {

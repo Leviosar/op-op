@@ -18,6 +18,8 @@ export default class P_007_223 extends Card {
     
     public static keywords: string[] = ["Strike"];
     
+    public static archetype: string[] = ["Supernovas","Straw Hat Crew"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class P_007_223 extends Card {
     
     public getKeywords(): string[] {
         return P_007_223.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_007_223.archetypes;
     }
     
     public getPower(): number {

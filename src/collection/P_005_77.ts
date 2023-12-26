@@ -18,6 +18,8 @@ export default class P_005_77 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
+    public static archetype: string[] = ["Four Emperors","Animal Kingdom Pirates"];
+    
     public static power: number = 8000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class P_005_77 extends Card {
     
     public getKeywords(): string[] {
         return P_005_77.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_005_77.archetypes;
     }
     
     public getPower(): number {

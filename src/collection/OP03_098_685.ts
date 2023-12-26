@@ -18,6 +18,8 @@ export default class OP03_098_685 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["World Government"];
+    
     public static power: number = 0;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP03_098_685 extends Card {
     
     public getKeywords(): string[] {
         return OP03_098_685.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_098_685.archetypes;
     }
     
     public getPower(): number {

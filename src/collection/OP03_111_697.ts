@@ -18,6 +18,8 @@ export default class OP03_111_697 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Mermaid","Sun Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP03_111_697 extends Card {
     
     public getKeywords(): string[] {
         return OP03_111_697.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_111_697.archetypes;
     }
     
     public getPower(): number {

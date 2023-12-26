@@ -18,6 +18,8 @@ export default class OP04_060_773 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["The Seven Warlords of the Sea","Baroque Works"];
+    
     public static power: number = 9000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_060_773 extends Card {
     
     public getKeywords(): string[] {
         return OP04_060_773.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_060_773.archetypes;
     }
     
     public getPower(): number {

@@ -18,6 +18,8 @@ export default class OP04_014_765 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
+    public static archetype: string[] = ["Alabasta Kingdom","Straw Hat Crew"];
+    
     public static power: number = 9000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP04_014_765 extends Card {
     
     public getKeywords(): string[] {
         return OP04_014_765.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_014_765.archetypes;
     }
     
     public getPower(): number {

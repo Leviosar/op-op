@@ -18,6 +18,8 @@ export default class OP04_080_777 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Dressrosa"];
+    
     public static power: number = 1000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP04_080_777 extends Card {
     
     public getKeywords(): string[] {
         return OP04_080_777.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_080_777.archetypes;
     }
     
     public getPower(): number {

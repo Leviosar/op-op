@@ -18,6 +18,8 @@ export default class P_039_791 extends Card {
     
     public static keywords: string[] = ["Banish"];
     
+    public static archetype: string[] = ["Bellamy Pirates"];
+    
     public static power: number = 6000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class P_039_791 extends Card {
     
     public getKeywords(): string[] {
         return P_039_791.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_039_791.archetypes;
     }
     
     public getPower(): number {

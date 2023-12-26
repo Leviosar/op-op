@@ -18,6 +18,8 @@ export default class OP04_005_764 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Animal","Alabasta Kingdom"];
+    
     public static power: number = 1000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP04_005_764 extends Card {
     
     public getKeywords(): string[] {
         return OP04_005_764.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_005_764.archetypes;
     }
     
     public getPower(): number {

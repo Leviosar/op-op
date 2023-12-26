@@ -18,6 +18,8 @@ export default class OP04_103_865 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Land of Wano","Kouzuki Clan"];
+    
     public static power: number = 0;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP04_103_865 extends Card {
     
     public getKeywords(): string[] {
         return OP04_103_865.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP04_103_865.archetypes;
     }
     
     public getPower(): number {

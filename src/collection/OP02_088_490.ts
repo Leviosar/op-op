@@ -18,6 +18,8 @@ export default class OP02_088_490 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Animal","Impel Down"];
+    
     public static power: number = 6000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP02_088_490 extends Card {
     
     public getKeywords(): string[] {
         return OP02_088_490.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_088_490.archetypes;
     }
     
     public getPower(): number {

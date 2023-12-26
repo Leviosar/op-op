@@ -18,6 +18,8 @@ export default class ST05_015_255 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["FILM","Scientist","Golden Lion Pirates"];
+    
     public static power: number = 4000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST05_015_255 extends Card {
     
     public getKeywords(): string[] {
         return ST05_015_255.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST05_015_255.archetypes;
     }
     
     public getPower(): number {

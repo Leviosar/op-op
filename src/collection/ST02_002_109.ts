@@ -18,6 +18,8 @@ export default class ST02_002_109 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Firetank Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST02_002_109 extends Card {
     
     public getKeywords(): string[] {
         return ST02_002_109.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST02_002_109.archetypes;
     }
     
     public getPower(): number {

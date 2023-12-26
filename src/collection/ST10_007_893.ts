@@ -18,6 +18,8 @@ export default class ST10_007_893 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Kid Pirates"];
+    
     public static power: number = 6000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class ST10_007_893 extends Card {
     
     public getKeywords(): string[] {
         return ST10_007_893.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST10_007_893.archetypes;
     }
     
     public getPower(): number {

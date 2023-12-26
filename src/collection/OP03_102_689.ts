@@ -18,6 +18,8 @@ export default class OP03_102_689 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Vinsmoke Family"];
+    
     public static power: number = 3000;
 
     public static counter: number = 2000;
@@ -46,6 +48,10 @@ export default class OP03_102_689 extends Card {
     
     public getKeywords(): string[] {
         return OP03_102_689.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_102_689.archetypes;
     }
     
     public getPower(): number {

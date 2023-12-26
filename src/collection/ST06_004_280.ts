@@ -18,6 +18,8 @@ export default class ST06_004_280 extends Card {
     
     public static keywords: string[] = ["Double Attack"];
     
+    public static archetype: string[] = ["Navy"];
+    
     public static power: number = 7000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST06_004_280 extends Card {
     
     public getKeywords(): string[] {
         return ST06_004_280.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST06_004_280.archetypes;
     }
     
     public getPower(): number {

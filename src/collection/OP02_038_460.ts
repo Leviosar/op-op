@@ -18,6 +18,8 @@ export default class OP02_038_460 extends Card {
     
     public static keywords: string[] = ["Blocker"];
     
+    public static archetype: string[] = ["Mink Tribe","Wano Country","Nine Red Scabbards"];
+    
     public static power: number = 4000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class OP02_038_460 extends Card {
     
     public getKeywords(): string[] {
         return OP02_038_460.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP02_038_460.archetypes;
     }
     
     public getPower(): number {

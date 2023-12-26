@@ -18,6 +18,8 @@ export default class DON_don_15 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = [];
+    
     public static power: number = 0;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class DON_don_15 extends Card {
     
     public getKeywords(): string[] {
         return DON_don_15.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return DON_don_15.archetypes;
     }
     
     public getPower(): number {

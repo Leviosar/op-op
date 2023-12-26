@@ -18,6 +18,8 @@ export default class OP03_013_629 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Whitebeard Pirates"];
+    
     public static power: number = 6000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class OP03_013_629 extends Card {
     
     public getKeywords(): string[] {
         return OP03_013_629.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return OP03_013_629.archetypes;
     }
     
     public getPower(): number {

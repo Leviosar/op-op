@@ -18,6 +18,8 @@ export default class P_030_536 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Fish-Man","The Seven Warlords of the Sea","Sun Pirates"];
+    
     public static power: number = 5000;
 
     public static counter: number = 1000;
@@ -46,6 +48,10 @@ export default class P_030_536 extends Card {
     
     public getKeywords(): string[] {
         return P_030_536.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return P_030_536.archetypes;
     }
     
     public getPower(): number {

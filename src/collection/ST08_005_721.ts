@@ -18,6 +18,8 @@ export default class ST08_005_721 extends Card {
     
     public static keywords: string[] = [];
     
+    public static archetype: string[] = ["Red Haired Pirates"];
+    
     public static power: number = 10000;
 
     public static counter: number = 0;
@@ -46,6 +48,10 @@ export default class ST08_005_721 extends Card {
     
     public getKeywords(): string[] {
         return ST08_005_721.keywords;
+    }
+    
+    public getArchetypes(): string[] {
+        return ST08_005_721.archetypes;
     }
     
     public getPower(): number {
