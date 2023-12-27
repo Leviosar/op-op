@@ -1,6 +1,6 @@
 <template>
   <template v-if="card.getOwner()?.id !== game.turn.player">
-    <flip-card :class="cardClass" @click="target">
+    <flip-card :class="cardClass" @click="select">
       <template v-slot:front> 
         <card-front :card="card"></card-front>
       </template>
@@ -11,7 +11,7 @@
   </template>
   <template v-else>
     <v-menu dark location="top">
-      <template v-slot:activator="{ props }" @click="target">
+      <template v-slot:activator="{ props }" @click="select">
         <flip-card v-bind="props" :class="cardClass">
           <template v-slot:front> 
             <card-front :card="card"></card-front>
@@ -44,6 +44,7 @@ import Card from '../../entities/Card';
 import Player from '../../entities/Player';
 import { game } from '../../store/game';
 import { battle } from '../../store/battle';
+import { target } from '../../store/target';
 
 export default defineComponent({
   components: {
@@ -62,22 +63,23 @@ export default defineComponent({
     },
   },
   methods: {
-    target() {
+    select() {
       if (!this.targetable) return;
       
-      switch (this.battle.step) {
-        case "targeting":
-          battle().target(this.card);
-        break;
-        case "selecting-blocker":
-          battle().blocker(this.card);
-        break;
-        case "selecting-counters":
-          battle().counter([this.card]);
-        break;
-        default:
-          break;
-      }
+      this.target_.select(this.card);
+      // switch (this.battle.step) {
+      //   case "targeting":
+      //     battle().target(this.card);
+      //   break;
+      //   case "selecting-blocker":
+      //     battle().blocker(this.card);
+      //   break;
+      //   case "selecting-counters":
+      //     battle().counter([this.card]);
+      //   break;
+      //   default:
+      //     break;
+      // }
     }
   },
   computed: {
@@ -88,24 +90,28 @@ export default defineComponent({
       }
     },
     targetable() {
-      if (!this.battle.started) return false;
+      if (this.target_.requests.length === 0) return false;
 
-      switch (this.battle.step) {
-        case "targeting":
-          return ["leader", "char"].includes(this.card.getType()) && this.card.isValidTargetForAttack && this.card.getOwner()?.id !== this.game.turn.player;
-        case "selecting-blocker":
-          return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
-        case "selecting-counters":
-          return this.card.getCounter() > 0 && this.card.location === "hand";   
-        default:
-          break;
-      }
+      return this.target_.check(this.card);
+      // switch (this.battle.step) {
+      //   case "targeting":
+      //     return ["leader", "char"].includes(this.card.getType()) && this.card.isValidTargetForAttack && this.card.getOwner()?.id !== this.game.turn.player;
+      //   case "selecting-blocker":
+      //     return this.card.getKeywords().includes("Blocker") && !this.card.tapped && this.card.location === "character-area";   
+      //   case "selecting-counters":
+      //     return this.card.getCounter() > 0 && this.card.location === "hand";   
+      //   default:
+      //     break;
+      // }
     },
     game() {
       return game();
     },
     battle() {
       return battle();
+    },
+    target_() {
+      return target();
     }
   },
 })

@@ -1,6 +1,8 @@
 import { defineStore } from "pinia";
 import Card from "../entities/Card";
 import { log } from "./log";
+import { target } from "./target";
+import { game } from "./game";
 
 interface BattleState {
     started: boolean;
@@ -33,6 +35,17 @@ export const battle = defineStore('battle', {
             this.started = true;
             this.attacker_ = attacker;
             this.step = "targeting";
+
+            target().request({
+                amount: 1,
+                quantifier: "exactly",
+                filters: [
+                    { comparator: (c) => ["leader", "char"].includes(c.getType()) },
+                    { comparator: (c) => c.getOwner()?.id !== game().turn.player },
+                    { comparator: (c) => c.isValidTargetForAttack },
+                ],
+                callback: (c) => this.target(c[0]),
+            })
         },
         async target(target: Card) {
             this.target_ = target;

@@ -4,6 +4,8 @@ import Deck from "./Deck";
 import { log } from "../store/log";
 import { dialog } from "../store/dialog";
 import { battle } from "../store/battle";
+import { target } from "../store/target";
+import { game } from "../store/game";
 
 export default class Player {
     public deck: Deck;
@@ -101,6 +103,18 @@ export default class Player {
             return;
         };
 
+        target().request({
+            amount: 1,
+            quantifier: "exactly",
+            filters: [
+                { comparator: (c: Card) => c.getOwner()!.id !== game().turn.player },
+                { comparator: (c: Card) => c.getKeywords().includes("Blocker") },
+                { comparator: (c: Card) => c.location === "character-area" },
+                { comparator: (c: Card) => !c.tapped },
+            ],
+            callback: (cards: Card[]) => battle().blocker(cards[0]),
+        })
+        
         battle().step = "selecting-blocker";
     }
 
@@ -126,6 +140,17 @@ export default class Player {
             return;
         };
 
+        target().request({
+            amount: 1,
+            quantifier: "at-least",
+            filters: [
+                { comparator: (c: Card) => c.getOwner()!.id !== game().turn.player },
+                { comparator: (c: Card) => c.getCounter() > 0 },
+                { comparator: (c: Card) => c.location === "hand" },
+            ],
+            callback: (cards: Card[]) => battle().counter(cards),
+        })
+        
         battle().step = "selecting-counters";
     }
 
