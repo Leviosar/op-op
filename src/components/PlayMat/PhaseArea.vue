@@ -1,16 +1,22 @@
 <template>
-  <div class="phases">
+  <v-col cols="12" class="py-0">
+    <v-chip 
+      color="primary"
+      style="display: block;"
+      class="my-2 d-flex align-center justify-center"
+    >
+      Player {{ store.turn.player }} turn
+    </v-chip>
     <template v-for="phase in phases" :key="phase.id">
       <v-chip
         @click="phase.callback"
-        :disabled="player.id !== store.turn.player"
         style="display: block;"
         class="my-2 d-flex align-center justify-center"
         :variant="store.turn.phase == phase.id ? 'flat' : 'outlined'"
         :color="store.turn.phase == phase.id ? 'red' : 'white'"
       > {{ phase.name }} </v-chip>
     </template>
-  </div>
+  </v-col>
 </template>
       
 <script lang="ts">

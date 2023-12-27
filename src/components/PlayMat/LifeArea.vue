@@ -1,9 +1,6 @@
 <template>
-  <div class="life-area" style="width: 100%;">
+  <div class="life-area" style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
     <flip-card 
-      v-for="life in lifes" :key="life"
-      style="position: absolute;" 
-      :class="`ms-${(life - 1) * 2}`"
       locked
       :default="true"
     >

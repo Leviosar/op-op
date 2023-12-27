@@ -1,8 +1,8 @@
 import { defineStore } from "pinia";
 
-type LogLevel = "debug" | "info" | "warning" | "error";
+export type LogLevel = "debug" | "info" | "warning" | "error";
 
-interface LogEntry {
+export interface LogEntry {
     message: string;
     level: LogLevel;
     data: Record<string, any> | null;

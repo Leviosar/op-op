@@ -1,10 +1,10 @@
 <template>
-  <flip-card>
+  <flip-card locked :default="true">
     <template v-slot:front>
       <card-front :card="player.deck.first()"/>
     </template>
     <template v-slot:back>
-      <card-back />
+      <card-back :text="player.deck.cards.length.toString()"/>
     </template>
   </flip-card>
 </template>

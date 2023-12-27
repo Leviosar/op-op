@@ -1,45 +1,33 @@
 <template>
   <v-card color="grey-darken-3" style="min-height: 300px" class="pa-4">
-    <v-row justify="end">
-      <v-col cols="10">
+    <v-row>
+      <v-col cols="1"></v-col>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <life-area :player="players[playerId]" />
+      </v-col>
+      <v-col cols="7">
         <character-area :player="players[playerId]" />
       </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12">
-        <v-row> 
-          <v-col>
-            <life-area :player="players[playerId]" />
-          </v-col>
-          <v-col></v-col>
-          <v-col class="d-flex justify-center align-center">
-            <!-- <phase-area :player="players[playerId]"/> -->
-          </v-col>
-          <v-col class="d-flex justify-end align-center">
-            <leader-area :player="players[playerId]"/>
-          </v-col>
-          <v-col class="d-flex justify-end align-center">
-            <stage-area :player="players[playerId]"/>
-          </v-col>
-          <v-col class="d-flex justify-center align-center">
-            <main-deck :player="players[playerId]" />
-          </v-col>
-        </v-row>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <leader-area :player="players[playerId]"/>
+      </v-col>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <stage-area :player="players[playerId]"/>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
-        <v-row>
-          <v-col cols="2" class="d-flex justify-center align-center">
-            <don-deck :player="players[playerId]" />
-          </v-col>
-          <v-col cols="8" class="d-flex justify-center align-center">
-            <cost-area :player="players[playerId]" />
-          </v-col>
-          <v-col cols="2" class="d-flex justify-center align-center">
-            <trash-area :player="players[playerId]" />
-          </v-col>
-        </v-row>
+      <v-col cols="1"></v-col>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <don-deck :player="players[playerId]" />
+      </v-col>
+      <v-col cols="7" class="d-flex justify-center align-center">
+        <cost-area :player="players[playerId]" />
+      </v-col>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <main-deck :player="players[playerId]" />
+      </v-col>
+      <v-col cols="1" class="d-flex justify-center align-center">
+        <trash-area :player="players[playerId]" />
       </v-col>
     </v-row>
     <v-row justify="center">
