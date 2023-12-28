@@ -1,6 +1,7 @@
 import { battle } from "../store/battle";
 import { game } from "../store/game";
 import { log } from "../store/log";
+import { target } from "../store/target";
 import CardAction from "./CardAction";
 import CardActionMetadata from "./CardActionMetadata";
 import Player from "./Player";
@@ -153,6 +154,9 @@ export default class Card {
             case "attack":
                 this.attack(metadata)
             break;
+            case "attach":
+                this.attach(metadata)
+            break;
         }
     }
 
@@ -201,49 +205,19 @@ export default class Card {
         battle().start(this);
     }
 
-    // public async attack_old(attacker: Player, _: CardActionMetadata | null) {
-    //     // Targeting step
-    //     const target = await attacker.promptToTargetAttack();
-
-    //     // Blocking step
-    //     const block = await (target.getOwner() as Player).promptToDefend();
-
-    //     // Counter step
-    //     const counter = await attacker.promptToCounter();
-
-    //     for (const c of counter.counters) {
-    //         console.log(c)
-    //         // TODO: Pay cost and activate counters
-    //     }
-
-    //     // Damage step
-    //     let result = false;
-        
-    //     // Formula should be attack + (DON!! * 1000) + temporary_effects
-    //     const attackerPower = this.getPower() + (this.attached.filter(c => c.getType() === 'don').length * 1000)
-
-    //     if (block.response) {
-    //         const blockerPower = block.blocker!.getPower() + (block.blocker!.attached.filter(c => c.getType() === 'don').length * 1000)
-    //         result = attackerPower >= blockerPower
-    //     } else {
-    //         const targetPower = target.getPower() + (target.attached.filter(c => c.getType() === 'don').length * 1000)
-    //         result = attackerPower >= targetPower
-    //     }
-
-    //     // Nothings happens, feijoada.
-    //     if (!result) return;
-        
-    //     if (target.getType() === 'char') {
-    //         target.ko();
-    //         return;
-    //     }
-
-    //     // Life trigger step
-    //     if (target.getOwner()!.lifeCards.length === 0) {
-    //         // game().over();
-    //         return;
-    //     } else {
-    //         target.getOwner()!.drawFromLifeCards(1);
-    //     }
-    // }
+    public attach(_: CardActionMetadata | null) {
+        target().request({
+            amount: 1,
+            quantifier: 'exactly',
+            filters: [
+                { comparator: (c) => c.getOwner()?.id == this.getOwner()?.id },
+                { comparator: (c) => c.getType() === "leader" || c.location === "character-area" },
+            ],
+            callback: (c) => {
+                const card = c[0];
+                this.getOwner()!.cost = this.getOwner()!.cost.filter(d => d.uuid !== this.uuid);
+                card.attached.push(this);
+            }
+        })
+    }
 }

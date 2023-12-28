@@ -1,26 +1,24 @@
 <template>
-  <template v-if="card.getOwner()?.id !== game.turn.player">
-    <flip-card :class="classes" @click="select" @mouseover="inspect">
-      <template v-slot:front> 
-        <card-front :card="card"></card-front>
-      </template>
-      <template v-slot:back> 
-        <card-back :card="card"></card-back>
-      </template>
-    </flip-card>
-  </template>
-  <template v-else>
-    <v-menu dark location="top">
-      <template v-slot:activator="{ props }">
-        <flip-card v-bind="props" :class="classes" @mouseover="inspect" @click="select">
-          <template v-slot:front> 
-            <card-front :card="card"></card-front>
-          </template>
-          <template v-slot:back> 
-            <card-back :card="card"></card-back>
-          </template>
-        </flip-card>
-      </template>
+  <div class="game-card">
+    <div class="card-wrapper d-flex">
+      <flip-card v-for="(att, index) in card.attached" :style="`position: absolute; margin-top: ${6 * (index + 1)}px; margin-right: ${6 * (index + 1)}px`">
+        <template v-slot:front> 
+          <card-front :card="att"></card-front>
+        </template>
+        <template v-slot:back> 
+          <card-back :card="att"></card-back>
+        </template>
+      </flip-card>
+      <flip-card :id="`game-card-${card.uuid}`" :class="classes" @mouseover="inspect" @click="select">
+        <template v-slot:front> 
+          <card-front :card="card"></card-front>
+        </template>
+        <template v-slot:back> 
+          <card-back :card="card"></card-back>
+        </template>
+      </flip-card>
+    </div>
+    <v-menu dark location="top" :activator="(card.getOwner()?.id !== game.turn.player) ? 'none' : `#game-card-${card.uuid}`">
       <v-list>
         <v-list-item
           v-for="(action, index) in card.actions.filter(a => a.condition())"
@@ -31,7 +29,7 @@
         </v-list-item>
       </v-list>
     </v-menu>
-  </template>
+  </div>
 </template>
 
 <script lang="ts">
